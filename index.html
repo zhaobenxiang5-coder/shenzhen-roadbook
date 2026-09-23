@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>深圳龙岗丹平出发 · 避坑反向自驾路书</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#1a202c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(22, 30, 46, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(30, 41, 65, 0.9);
+      --primary: #f97316;
+      --primary-light: #fb923c;
+      --primary-glow: rgba(249, 115, 22, 0.25);
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.2);
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --border: #334155;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.25);
+      --shadow-lg: 0 10px 30px -5px rgba(0,0,0,0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(30, 41, 65, 0.4) 0px, transparent 100%);
+      background-attachment: fixed;
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding-bottom: 90px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+
+    /* Header */
+    .header {
+      padding: 24px 0 16px;
+      text-align: left;
+      position: relative;
+    }
+
+    .meta-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(249, 115, 22, 0.15);
+      border: 1px solid rgba(249, 115, 22, 0.35);
+      color: #fdba74;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.25;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .base-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-top: 14px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .base-icon {
+      font-size: 22px;
+      line-height: 1;
+      padding: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+
+    .base-info h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 2px;
+    }
+
+    .base-info p {
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.4;
+    }
+
+    /* Tab switcher */
+    .tab-nav {
+      position: sticky;
+      top: 10px;
+      z-index: 99;
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 6px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 18px 0;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 10px 14px;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 13px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .tab-btn.active {
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+
+    .tab-btn .badge-pill {
+      font-size: 10px;
+      opacity: 0.85;
+      font-weight: 500;
+    }
+
+    /* Intro box */
+    .tab-intro {
+      background: rgba(30, 41, 59, 0.4);
+      border-left: 3px solid var(--primary);
+      padding: 10px 14px;
+      border-radius: 4px 12px 12px 4px;
+      font-size: 12px;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    /* Day Card */
+    .day-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 22px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .day-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding-bottom: 12px;
+    }
+
+    .day-tag {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .day-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .day-date {
+      font-size: 12px;
+      font-weight: 600;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .crowd-pill {
+      font-size: 11px;
+      color: #34d399;
+      background: rgba(52, 211, 153, 0.12);
+      padding: 3px 8px;
+      border-radius: 9999px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .day-subtitle {
+      font-size: 15px;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .day-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: rgba(15, 23, 42, 0.5);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .metric-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .metric-item svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      color: var(--primary-light);
+    }
+
+    /* Highlights bullets */
+    .highlights-box {
+      margin-bottom: 18px;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+      line-height: 1.45;
+    }
+
+    .highlight-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    /* Plan Switcher (A / B 平替切换核心) */
+    .plan-switch-wrap {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+
+    .plan-toggle-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.35);
+      padding: 4px;
+      border-radius: 10px;
+      margin-bottom: 14px;
+    }
+
+    .plan-toggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-dim);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 8px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .plan-toggle-btn.active.plan-a-btn {
+      background: #f97316;
+      color: #ffffff;
+      box-shadow: 0 2px 10px rgba(249, 115, 22, 0.4);
+    }
+
+    .plan-toggle-btn.active.plan-b-btn {
+      background: #10b981;
+      color: #ffffff;
+      box-shadow: 0 2px 10px rgba(16, 185, 129, 0.4);
+    }
+
+    .plan-content {
+      display: none;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    .plan-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .spot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .spot-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #f8fafc;
+      line-height: 1.35;
+    }
+
+    .spot-desc {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .parking-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+      padding: 6px 10px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    /* Action Nav Buttons (高德一键导航) */
+    .nav-btn-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .amap-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 9px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
+      transition: opacity 0.2s;
+    }
+
+    .amap-btn:active {
+      opacity: 0.85;
+      transform: scale(0.98);
+    }
+
+    .amap-food-btn {
+      background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+      box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+    }
+
+    /* Food Section */
+    .food-card {
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid #f59e0b;
+      padding: 10px 12px;
+      border-radius: 4px 10px 10px 4px;
+      font-size: 12px;
+    }
+
+    .food-title {
+      font-weight: 700;
+      color: #fbbf24;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .food-desc {
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* Tips Box */
+    .tips-card {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 12px;
+      color: #fca5a5;
+    }
+
+    .tips-card strong {
+      color: #f87171;
+    }
+
+    .tips-item {
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+
+    .tips-item:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Toolbox Section */
+    .toolbox {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .toolbox h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toolbox-item {
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+
+    .toolbox-item .lbl {
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 4px;
+    }
+
+    .toolbox-item .cnt {
+      color: #94a3b8;
+      line-height: 1.45;
+    }
+
+    /* Floating Share Button */
+    .share-bar {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 32px);
+      max-width: 480px;
+      z-index: 100;
+      display: flex;
+      gap: 10px;
+    }
+
+    .share-btn {
+      flex: 1;
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: #ffffff;
+      border: none;
+      outline: none;
+      padding: 14px 20px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
+      cursor: pointer;
+    }
+
+    .toast {
+      position: fixed;
+      top: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-100px);
+      background: #10b981;
+      color: white;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      z-index: 999;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Hide unused tab */
+    .tab-section {
+      display: none;
+    }
+
+    .tab-section.active {
+      display: block;
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toast" id="toast">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-text">路书链接已复制，可直接微信发给女朋友！</span>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="meta-tag">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        深圳龙岗丹平社区（南湾/平湖）
+      </div>
+      <h1 class="title">深圳龙岗丹平出发 · 避坑反向自驾路书</h1>
+      <p class="subtitle">中秋 3 天 + 国庆 5 天 · 每日日归回家睡 · 厌人精选 · 双重平替</p>
+
+      <div class="base-card">
+        <div class="base-icon">🏡</div>
+        <div class="base-info">
+          <h4>每日归宿法则：0房费·回丹平睡大床</h4>
+          <p>每日往返节省天价酒店，避开大梅沙/较场尾/深圳湾等传统地狱级堵点，全覆盖A/B平替与高德一键导航</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top Tab Navigation -->
+    <nav class="tab-nav">
+      <button class="tab-btn active" onclick="switchMainTab('mid_autumn')">
+        <span>🌕 中秋 3 天假期</span>
+        <span class="badge-pill">山野清凉 · 观海赏月</span>
+      </button>
+      <button class="tab-btn" onclick="switchMainTab('national_day')">
+        <span>🇨🇳 国庆 5 天黄金周</span>
+        <span class="badge-pill">避堵反向 · 纯净海滩</span>
+      </button>
+    </nav>
+
+    <!-- Tab Section: mid_autumn -->
+    <section id="section-mid_autumn" class="tab-section active">
+      <div class="tab-intro">
+        💡 <strong>本程策略：</strong>假期短、高速不免费，周边出深方向微拥堵。全部设计在单程 35~65 分钟内，早出晚归，吃完夜宵回丹平安心睡好觉。
+      </div>
+    
+      <article class="day-card" id="mid_autumn-d1">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 1 (中秋首日)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★☆☆☆☆ (避开马峦山主入口游客大队)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>绿意森林听泉瀑布 · 客家古堡月夜</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 38km / 45分钟 (丹平快速→水官高速→南坪快速)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>清幽溯溪、遮阳林荫、古堡光影</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>从坪山碧岭瀑布群步道逆向进入，一路竹林与流水，体感温度低3-5℃</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>傍晚转场大万世居，观赏客家围屋古堡青砖灰瓦，中秋夜灯光氛围极佳</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>全程停车便利，步道平缓不费腿，情侣携手漫步毫无压力</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-mid_autumn-d1" onclick="switchSubPlan('mid_autumn-d1', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-mid_autumn-d1" onclick="switchSubPlan('mid_autumn-d1', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-mid_autumn-d1">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】马峦山碧岭瀑布群 + 大万世居</h4>
+            </div>
+            <p class="spot-desc">从坪山碧岭登山道上山，溪水清澈见底，瀑布叠水错落，林荫遮阳率超90%。下午4点驱车15分钟至全国最大的客家围屋之一大万世居，感受静谧的人文与咖啡小馆。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>碧岭瀑布步道停车场（停车位较多，建议9:30前或14:00后到达）</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.301548,22.653412,马峦山碧岭瀑布景区&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=坪山客家窑鸡农庄" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：坪山客家窑鸡与手打牛肉丸</span>
+              </div>
+              <div class="food-desc">【官湖/坪山老牌客家农庄】现烤泥土窑鸡（外皮焦脆爆汁）+ 咸香酿豆腐 + 苦笋煲</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-mid_autumn-d1">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】龙岗园山风景区 / 大运自然公园环湖</h4>
+            </div>
+            <p class="spot-desc">如果南坪快速出现车流缓行，直接从丹平切入横岗园山，隐藏在深山里的大氧吧！有碧玉潭、大康溪谷，人流量只有主流景区的1/10；或者去大运自然公园大草坪露营吹风看日落。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>园山风景区正门停车场，车位充裕随到随停</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.249215,22.641235,园山风景区&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=龙岗南湾潮汕牛肉火锅" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：南湾/布吉地道潮汕生腌与夜市排档</span>
+              </div>
+              <div class="food-desc">返程回到丹平/南湾社区周边吃【老字号潮汕鲜牛肉火锅】吊龙伴与匙柄，配生腌膏蟹，避开所有景区高溢价！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 避坑提醒：千万不要走大梅沙或马峦山小梅沙入口，节假日东部沿海高速必定排长龙，务必认准【坪山碧岭入口】！</div><div class="tips-item">• 穿搭建议：穿防滑运动鞋，带驱蚊水和备用一件干T恤备换。</div>
+        </div>
+      </article>
+        
+      <article class="day-card" id="mid_autumn-d2">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 2 (中秋正日)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★★☆☆☆ (大鹏半岛中最静谧片区)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>原生态白沙湾 · 500年古银叶树海岸日落</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 58km / 55分钟 (水官高速→惠深沿海高速葵涌出口)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>海风微凉、海面如镜、避开较场尾喧嚣</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>避开南澳杨梅坑堵车大军，直奔大鹏最北端坝光银叶树湿地，古树盘根错节</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>排牙山麓脚下的白沙湾与红树林栈道，海水能见度高，退潮时可赶海拾贝</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>傍晚在沿海公路看一场橘子海晚霞，中秋满月从海平面升起</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-mid_autumn-d2" onclick="switchSubPlan('mid_autumn-d2', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-mid_autumn-d2" onclick="switchSubPlan('mid_autumn-d2', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-mid_autumn-d2">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】坝光银叶树湿地公园 + 白沙湾海岸</h4>
+            </div>
+            <p class="spot-desc">拥有世界上保存最完整、树龄最大的天然古银叶树群落。木栈道伸入海湾，游人极少，吹着无腥味海风，情侣牵手漫步拍照出片率100%。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>坝光湿地园生态停车场（车位空余，无预约压力）</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.521820,22.646549,坝光银叶树湿地园&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=葵涌老街海鲜" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：葵涌老街海鲜私房菜</span>
+              </div>
+              <div class="food-desc">【葵涌老街无名排档】爆炒野生八爪鱼、黄椒酱蒸泥鯭鱼、蒜蓉粉丝蒸本地鲜带子，人均80吃饱吃鲜</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-mid_autumn-d2">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】惠阳澳头小桂村沿海绿道</h4>
+            </div>
+            <p class="spot-desc">从丹平出发沿深汕/惠深沿海在小桂出口下（不进大鹏半岛，无需预约通行！）。租一辆双人自行车沿着碧海绿道骑行，吹海风看海鸟，沿途渔排静静漂浮，极具避世感。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>小桂驿站停车场（停车免费/极便宜）</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.582103,22.709321,小桂村绿道&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=惠阳澳头海鲜码头" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：澳头海鲜码头现挑现做</span>
+              </div>
+              <div class="food-desc">码头直购渔民当天刚靠岸的白灼九节虾、椒盐皮皮虾，拿到旁边大排档加工，性价比爆杀深圳市区！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 避堵秘诀：走葵涌出口下高速，不往较场尾/东西涌挤。若逢大鹏预约管制，直接切换平替B（惠阳小桂村无需大鹏预约！）。</div><div class="tips-item">• 傍晚准备：准备一张野餐垫，海边草坪静坐等一轮中秋明月，浪漫至极。</div>
+        </div>
+      </article>
+        
+      <article class="day-card" id="mid_autumn-d3">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 3 (中秋收官)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★☆☆☆☆ (纯本地人散步秘境)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>万亩林海深呼吸 · 森林水库古村寻味</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 32km / 35分钟 (丹平快速→清平高速/从莞深高速)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>清爽山风、古树遮天、特色碌鹅美食之旅</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>丹平快速直上清平高速，30分钟无缝切换进东莞塘厦大屏嶂森林公园</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>万亩荔枝林环抱的大坪水库，沿水库环湖步道绿树成荫，几乎没有外地游客</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>晚上回程顺路去甘坑客家小镇后山看灯火阑珊，完美收尾中秋小长假</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-mid_autumn-d3" onclick="switchSubPlan('mid_autumn-d3', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-mid_autumn-d3" onclick="switchSubPlan('mid_autumn-d3', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-mid_autumn-d3">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】东莞塘厦大屏嶂森林公园 + 大坪水库</h4>
+            </div>
+            <p class="spot-desc">紧邻深圳平湖/凤岗，森林覆盖率达96%，空气负氧离子极高。情侣漫步在芳香植物园与观音山次生林，湖光山色倒映蓝天，静谧到只能听到鸟鸣与脚步声。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>大屏嶂森林公园南门停车场，免费且车位充足</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.073289,22.782012,大屏嶂森林公园&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=塘厦正宗碌鹅" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：塘厦地道传统碌鹅</span>
+              </div>
+              <div class="food-desc">【塘厦农家碌鹅】酱汁浓郁、鹅皮弹韧、鹅肉入味多汁，搭配刚出锅的柴火农家豆腐与客家粉丝煲！</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-mid_autumn-d3">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】龙岗红花岭生态公园 / 龙口水库步道</h4>
+            </div>
+            <p class="spot-desc">完全在龙岗本地，不跨城。环水库木栈道被茂密树林包围，空气极为清新，登顶观景台可俯瞰大运中心全景与水库全貌，人少景美。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>公园东侧生态停车场，随到随停</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.228912,22.716301,红花岭生态公园&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=平湖守珍街美食" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：平湖守珍街老牌糖水与客家小吃</span>
+              </div>
+              <div class="food-desc">返程到平湖守珍街打卡老字号手工芝麻糊、姜汁撞奶、炸油糍、肠粉，温暖市井烟火气。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 节奏把握：最后一天以休整为主，下午4点前返程丹平，完全避开高速返程车流，晚上在家舒适泡脚休息。</div>
+        </div>
+      </article>
+        
+    </section>
+    
+    <!-- Tab Section: national_day -->
+    <section id="section-national_day" class="tab-section ">
+      <div class="tab-intro">
+        💡 <strong>本程策略：</strong>国庆高速免费、全网出行井喷！本路线严格践行【反向自驾法则】：10.1留在深莞边界避堵，10.2深入客家隐世古村，10.3直奔冷门深汕海滩，10.4走顺德/中山后街寻味，10.5登第一峰吸氧收官！
+      </div>
+    
+      <article class="day-card" id="national_day-d1">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 1 (10月1日 · 全网首日大堵车)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★☆☆☆☆ (纯本地周边生活圈)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>逆向不出深 · 湖畔林盘草坪露营放空</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 15km / 22分钟 (丹平社区经平湖辅岐路直达，不走任何收费拥堵高速)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>避开堵车大军、森林草地、湖光微澜</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>全国各大高速首日必然堵红，我们不走高速，20分钟走地面快速直接进入凤岗官井头水库/平湖生态园</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>带上便携露营椅和咖啡，坐在水杉林湖畔边，看着朋友圈高速堵车发呆，松弛感拉满</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>晚上品尝地道顺德桑拿鸡或客家猪肚鸡，花钱少体验极好</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-national_day-d1" onclick="switchSubPlan('national_day-d1', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-national_day-d1" onclick="switchSubPlan('national_day-d1', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-national_day-d1">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】凤岗官井头水库森林步道 + 龙凤后山</h4>
+            </div>
+            <p class="spot-desc">龙凤山庄后方未开发的自然林区与官井头水库，沿岸高大绿树成荫，湖面水鸟嬉戏，完全感受不到国庆的人山人海。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>水库外围道旁停车位及后山空旷停车场</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.184321,22.712104,官井头水库&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=凤岗客家黄鳝饭" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：凤岗客家黄鳝饭与脆皮烧鸭</span>
+              </div>
+              <div class="food-desc">【凤岗老街土菜馆】炭火瓦煲黄鳝饭，米饭粒粒分明泛着金黄焦香锅巴，鲜香四溢！</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-national_day-d1">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】平湖生态园（平湖水库环湖绿道）</h4>
+            </div>
+            <p class="spot-desc">距离丹平社区仅6公里，拥有占地数千亩的水库湿地与环湖跑道，绿化极佳，甚至可以骑单车环湖慢行，无人打扰。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>平湖生态园正门停车场，车位超多</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.129302,22.684120,平湖生态园&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=南湾客家猪肚鸡" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：丹竹头/南湾浓香猪肚鸡</span>
+              </div>
+              <div class="food-desc">回到丹平家门口喝一碗浓白胡椒猪肚包鸡汤，暖胃驱湿，肉质爽脆弹牙！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 心态建议：国庆第1天切忌上跨省高速或惠州海边方向高速，留在深莞交界是高段位老司机的黄金智慧！</div>
+        </div>
+      </article>
+        
+      <article class="day-card" id="national_day-d2">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 2 (10月2日)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★★☆☆☆ (文艺幽静小众点)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>归隐田园 · 惠州秋长客家围屋古村落</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 46km / 50分钟 (水官高速→深汕西或惠阳内环直达)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>古樟绿荫、青砖黛瓦、田园小资咖啡</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>避开人挤人的大鹏古城，前往惠阳秋长谷里。300年历史客家古建筑群与现代精品书吧、手作咖啡馆融合</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>两旁是梯田和老樟树林，没有商业叫卖声，两人在青石板小巷漫步，文艺出片</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>顺道打卡碧溪古村与叶挺故里，沉浸在岭南乡村的慢节奏中</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-national_day-d2" onclick="switchSubPlan('national_day-d2', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-national_day-d2" onclick="switchSubPlan('national_day-d2', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-national_day-d2">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】惠阳秋长谷里古村 + 碧溪老围</h4>
+            </div>
+            <p class="spot-desc">保存完好的大型客家传统四合院落围屋，融入了山水庭院与轻奢艺术空间。午后在古宅天街喝一杯桂花拿铁，惬意无比。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>秋长谷里景区专属地面停车场，免费停车</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.431204,22.802195,秋长谷里&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=惠阳秋长客家农家乐" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：惠阳客家三杯鸭与农家盐焗手撕鸡</span>
+              </div>
+              <div class="food-desc">【古村旁秋长农庄】柴火大锅慢煨的三杯鸭，色泽酱红醇厚；再来一份现做客家艾粄糍粑，软糯清香。</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-national_day-d2">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】深圳观澜版画村 + 牛湖老街</h4>
+            </div>
+            <p class="spot-desc">如果当天高速车流增加，转走清平快速去观澜。古村依山傍水，排屋古色古香，碉楼矗立，池塘睡莲盛开，版画工坊艺术气息浓厚。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>观澜版画基地生态停车场</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.078921,22.723145,观澜版画村&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=观澜老街客家腌面" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：观澜老街客家腌面与牛肉汤</span>
+              </div>
+              <div class="food-desc">老街街坊食堂，蒜油香浓郁的梅州客家腌面，搭配一碗热腾腾的鲜枸杞叶三及第汤！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 摄影建议：女生穿素色长裙或棉麻服饰，配古村老墙、青砖与绿竹林拍照极具质感。</div>
+        </div>
+      </article>
+        
+      <article class="day-card" id="national_day-d3">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 3 (10月3日)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★★☆☆☆ (完胜惠州双月湾的人头海)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>深汕秘境海岸 · 绝美百安沙滩与渔港海鲜</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 110km / 1小时20分 (沈海高速往深汕方向，早8:00前出发畅行无阻)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>天蓝海碧、细白沙滩、无商业围挡</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>双月湾国庆会堵成露天停车场！我们反向多开30分钟，进入深汕特别合作区鲘门百安海滩</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>这里的海水是渐变蓝绿色，沙质细腻踩水极软，关键是没有密密麻麻的遮阳伞与强制消费</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>鲘门是广东省内著名的海鲜枢纽，当天出海的海鲜极其生猛新鲜，价格童叟无欺</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-national_day-d3" onclick="switchSubPlan('national_day-d3', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-national_day-d3" onclick="switchSubPlan('national_day-d3', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-national_day-d3">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】深汕百安海滩 + 鲘门渔港日落</h4>
+            </div>
+            <p class="spot-desc">半月形的宁静海湾，浪平沙细。情侣可以一起沿海踩水、捡贝壳、看潮起潮落。傍晚开车5分钟到鲘门海鲜码头看渔船归航日落。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>百安村口海滨开敞停车场，位置宽裕</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=115.112930,22.784012,百安海滩&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=鲘门海鲜饭店" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：鲘门正宗手打马鲛鱼丸与红鲟饭</span>
+              </div>
+              <div class="food-desc">【鲘门港口饭店】弹牙多汁的现煮鲜马鲛鱼丸汤，搭配满满膏蟹蒸糯米饭（红鲟饭），鲜甜直冲天灵盖！</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-national_day-d3">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】大鹏鹿嘴山庄清晨追光快线</h4>
+            </div>
+            <p class="spot-desc">如果不想出深，实行【超早鸟策略】：早晨6:30出发直插大鹏杨梅坑鹿嘴山庄看悬崖海景，中午12点在拥堵大潮到来前打道回府！</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>杨梅坑停车场，早到可抢占首排观海车位</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.593210,22.569431,鹿嘴山庄&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=大鹏海胆炒饭" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：南澳海胆炒饭与窑鸡</span>
+              </div>
+              <div class="food-desc">杨梅坑老店金黄诱人的南澳海胆炒饭，海胆香气与米香交织，鲜甜满分。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 高速窗口：去深汕务必早晨8:00前上沈海高速，返程建议傍晚16:30前或晚上20:30后，完美避开主干道潮汐拥堵！</div>
+        </div>
+      </article>
+        
+      <article class="day-card" id="national_day-d4">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 4 (10月4日)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★★★☆☆ (避开华侨城，只钻市井老巷)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>深中通道飞驰 · 顺德容桂水乡私房寻味</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 95km / 1小时15分 (经深中通道直达中山/顺德容桂)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>工程奇迹、市井老街、世界美食之都寻味</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>自驾体验宏伟的深中通道海底隧道与伶仃洋大桥，跨海视野极为震撼！</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>坚决避开顺德大良清晖园和逢简水乡的人挤人，直奔容桂渔人码头周边的文创老街与隐秘私房小馆</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>下午在河堤边喝特色水牛奶咖啡，晚上吃一顿鲜嫩爽脆的桑拿走地鸡</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-national_day-d4" onclick="switchSubPlan('national_day-d4', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-national_day-d4" onclick="switchSubPlan('national_day-d4', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-national_day-d4">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】深中通道跨海体验 + 顺德容桂老街寻味</h4>
+            </div>
+            <p class="spot-desc">从深圳丹平经机荷高速直上深中通道，一路飞驰过海。在容桂老城区旧马路穿街走巷，寻访百年手艺老店，感受没有滤镜的市井顺德。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>德胜河南岸或文创园地下停车场</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=113.298210,22.774512,容桂渔人码头&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=容桂地道桑拿鸡" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：顺德桑拿鸡、双皮奶与生滚粥</span>
+              </div>
+              <div class="food-desc">【容桂街坊推荐私房菜】桑拿虫草花鸡肉（蒸3分钟开盖嫩滑出汁）、现炸松脆双皮奶、窝蛋牛肉生滚及第粥！</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-national_day-d4">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】中山南朗崖口村海边稻田与海鲜街</h4>
+            </div>
+            <p class="spot-desc">如果不想开到顺德，深中通道下来第一站就在中山南朗下高速。崖口村有上千亩临海金色稻田、彩色集装箱咖啡街，海风拂面，稻香四溢。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>崖口稻田驿站停车场，停车位多且有引导</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=113.568412,22.482190,崖口村稻田&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=中山崖口云吞" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：崖口云吞与海鲜煲仔饭</span>
+              </div>
+              <div class="food-desc">【崖口人家】皮薄如蝉翼的鲜虾蟹子小云吞，以及现点现焗的脆皮黄鳝煲仔饭，底部的金黄锅巴香脆扑鼻！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 深中通道提示：深中通道非早晚高峰通行非常顺畅，若遇桥面缓行，放平心态吹海风看海景也是一种享受！</div>
+        </div>
+      </article>
+        
+      <article class="day-card" id="national_day-d5">
+        <div class="day-header">
+          <div class="day-tag">
+            <span class="day-title">Day 5 (10月5日 · 黄金周收官)</span>
+          </div>
+          <span class="crowd-pill">人流热度：★☆☆☆☆ (小众野趣原生态森林)</span>
+        </div>
+
+        <div class="day-subtitle">
+          <span>📍</span>
+          <span>东莞第一峰 · 绝壁绿谷沿溪森呼吸收心</span>
+        </div>
+
+        <div class="day-metrics">
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+            <span>单程约 52km / 50分钟 (从莞深高速→潮莞高速谢岗出口)</span>
+          </div>
+          <div class="metric-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <span>林深树密、溪流叮咚、登高望远</span>
+          </div>
+        </div>
+
+        <div class="highlights-box">
+          <div class="highlight-item"><div class="highlight-dot"></div><div>拒绝人满为患的梧桐山/大顶岭，自驾至东莞第一峰银瓶山（谢岗景区入口）</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>景区沿溪流木栈道而建，全程有浓密树荫遮蔽，沿途飞瀑流泉，宛如天然空调房</div></div><div class="highlight-item"><div class="highlight-dot"></div><div>走走停停轻徒步2小时，呼吸高浓度负离子洗肺，为假期画上清爽健康的句号</div></div>
+        </div>
+
+        <!-- Plan Switcher (A / B 平替切换) -->
+        <div class="plan-switch-wrap">
+          <div class="plan-toggle-bar">
+            <button class="plan-toggle-btn plan-a-btn active" id="btn-a-national_day-d5" onclick="switchSubPlan('national_day-d5', 'a')">
+              <span>🌟 主选方案 A</span>
+            </button>
+            <button class="plan-toggle-btn plan-b-btn" id="btn-b-national_day-d5" onclick="switchSubPlan('national_day-d5', 'b')">
+              <span>🔄 避堵平替 B</span>
+            </button>
+          </div>
+
+          <!-- Plan A Content -->
+          <div class="plan-content active" id="content-a-national_day-d5">
+            <div class="spot-header">
+              <h4 class="spot-name">【主选A】东莞银瓶山森林公园（谢岗第一峰入口）</h4>
+            </div>
+            <p class="spot-desc">主峰海拔898米，山峰如水银长瓶，奇石嶙峋。情侣沿一湖秀水和幽林石阶慢行，听松涛鸟鸣，登临半山观景台便可极目远眺群山连绵。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>银瓶山谢岗第一停车场（生态停车位，环境整洁）</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.215432,22.923412,银瓶山森林公园谢岗景区&mode=car" target="_blank" class="amap-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航景点
+              </a>
+              <a href="https://uri.amap.com/search?keyword=银瓶山谢岗农家乐" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃必吃美食
+              </a>
+            </div>
+
+            <div class="food-card">
+              <div class="food-title">
+                <span>🍽️</span>
+                <span>必吃美食：谢岗山泉水煲走地鸡与山坑螺</span>
+              </div>
+              <div class="food-desc">【山脚农夫食肆】用清冽山泉水慢火炖的农家走地鸡汤，鲜美甘甜；紫苏爆炒山坑螺，回味无穷！</div>
+            </div>
+          </div>
+
+          <!-- Plan B Content -->
+          <div class="plan-content" id="content-b-national_day-d5">
+            <div class="spot-header">
+              <h4 class="spot-name">【避堵平替B】盐田三洲田公路自驾慢游 + 茶溪谷水库</h4>
+            </div>
+            <p class="spot-desc">深圳最美自驾盘山公路之一！无需买景区门票，顺着盘山绿树公路行驶，观赏三洲田水库碧蓝湖水与山林静谧，在沿途观景平台喝杯露营咖啡看黄昏晚霞。</p>
+            <div class="parking-row">
+              <span>🅿️</span>
+              <span><strong>停车攻略：</strong>三洲田水库观景平台及茶溪谷外围停车带</span>
+            </div>
+
+            <div class="nav-btn-grid">
+              <a href="https://uri.amap.com/navigation?to=114.289123,22.628412,三洲田水库&mode=car" target="_blank" class="amap-btn" style="background: linear-gradient(135deg, #059669 0%, #047857 100%);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                高德一键导航平替
+              </a>
+              <a href="https://uri.amap.com/search?keyword=盐田红烧乳鸽" target="_blank" class="amap-btn amap-food-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg>
+                导航去吃平替美食
+              </a>
+            </div>
+
+            <div class="food-card" style="border-left-color: #10b981;">
+              <div class="food-title" style="color: #34d399;">
+                <span>🍲</span>
+                <span>平替美食：盐田老字号乳鸽与海鲜肠粉</span>
+              </div>
+              <div class="food-desc">返程下山到盐田海鲜街或沙头角老店吃皮脆肉嫩爆汁的金牌红烧乳鸽，再来一份蒸海鲜肠粉！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips Card -->
+        <div class="tips-card">
+          <div class="tips-item">• 收心节奏：下午15:30前启程返回丹平社区，傍晚回温馨的家整理衣物、洗个热水澡，避开夜间返程大塞车，神清气爽迎接工作！</div>
+        </div>
+      </article>
+        
+    </section>
+    
+    <!-- Toolbox Section -->
+    <section class="toolbox">
+      <h3>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#f97316"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+        老司机自驾避坑工具箱
+      </h3>
+
+      <div class="toolbox-item">
+        <div class="lbl">⚡ 深圳外地车限行提示</div>
+        <div class="cnt">中秋与国庆法定假日期间，深圳全市暂停外地车早晚高峰限行（即不限行），自驾出行无忧。</div>
+      </div>
+    
+      <div class="toolbox-item">
+        <div class="lbl">⚡ 大鹏半岛预约政策</div>
+        <div class="cnt">节假日自驾前往大鹏半岛需在‘深圳交警’公众号预约。路书特意设置了备选平替（如惠阳澳头小桂村无需任何预约），若未抢到预约号可一键切换平替！</div>
+      </div>
+    
+      <div class="toolbox-item">
+        <div class="lbl">⚡ 深中通道避堵黄金时间</div>
+        <div class="cnt">早晨08:00前或中午12:00-13:30过桥极为畅通，傍晚17:00-19:30车流集中，请合理安排过桥时段。</div>
+      </div>
+    
+      <div class="toolbox-item">
+        <div class="lbl">⚡ 情侣自驾后备箱常备清单</div>
+        <div class="cnt">便携露营折叠椅×2、轻便野餐垫、防蚊喷雾、车载保温杯、防晒衣/遮阳伞、湿纸巾、两瓶矿泉水。</div>
+      </div>
+    
+    </section>
+  </div>
+
+  <!-- Bottom Floating Share Bar -->
+  <div class="share-bar">
+    <button class="share-btn" onclick="copyShareLink()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+      <span>分享给女朋友 / 收藏路书</span>
+    </button>
+  </div>
+
+  <script>
+    // Tab switching (Mid-autumn vs National Day)
+    function switchMainTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-section').forEach(sec => sec.classList.remove('active'));
+
+      if (tabId === 'mid_autumn') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('section-mid_autumn').classList.add('active');
+      } else {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('section-national_day').classList.add('active');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Sub-plan A/B switcher
+    function switchSubPlan(dayId, planType) {
+      const btnA = document.getElementById(`btn-a-${dayId}`);
+      const btnB = document.getElementById(`btn-b-${dayId}`);
+      const contentA = document.getElementById(`content-a-${dayId}`);
+      const contentB = document.getElementById(`content-b-${dayId}`);
+
+      if (planType === 'a') {
+        btnA.classList.add('active');
+        btnB.classList.remove('active');
+        contentA.classList.add('active');
+        contentB.classList.remove('active');
+      } else {
+        btnB.classList.add('active');
+        btnA.classList.remove('active');
+        contentB.classList.add('active');
+        contentA.classList.remove('active');
+      }
+    }
+
+    // Copy and share link
+    function copyShareLink() {
+      const currentUrl = window.location.href;
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(currentUrl).then(() => {
+          showToast();
+        }).catch(() => {
+          fallbackCopy(currentUrl);
+        });
+      } else {
+        fallbackCopy(currentUrl);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.left = "-999999px";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast();
+      } catch (err) {
+        alert("长按网址即可直接复制并分享给好友！");
+      }
+      document.body.removeChild(textArea);
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>

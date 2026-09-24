@@ -3,33 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>深圳龙岗丹平出发 · 避坑反向自驾路书 (中秋3天+国庆5天)</title>
+  <title>✨ 深圳龙岗丹平出发 · 避坑反向自驾路书 (中秋3天+国庆5天) 🌟</title>
   <!-- WeChat & Social Meta -->
-  <meta property="og:title" content="深圳自驾反向路书 · 中秋3天+国庆5天">
-  <meta property="og:description" content="情侣专属·厌人避堵·每日回丹平睡大床·A/B/C三重平替·吃玩集群深度清单">
+  <meta property="og:title" content="🌟 深圳自驾反向路书 · 中秋3天+国庆5天">
+  <meta property="og:description" content="情侣专属·厌人避堵·每日回丹平睡大床·A/B/C三重平替·小清新慢调吃玩全清单 ✨">
   <meta property="og:image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="theme-color" content="#090d16">
+  <meta name="theme-color" content="#0d1424">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #090d16;
-      --card-bg: rgba(18, 24, 38, 0.9);
-      --card-border: rgba(255, 255, 255, 0.09);
-      --primary: #f97316;
-      --primary-light: #fb923c;
-      --primary-glow: rgba(249, 115, 22, 0.35);
-      --accent: #10b981;
-      --accent-glow: rgba(16, 185, 129, 0.3);
-      --purple: #8b5cf6;
+      --bg: #090e1a;
+      --card-bg: rgba(20, 28, 45, 0.82);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --card-inner: rgba(14, 20, 34, 0.7);
+      --primary: #fb923c;
+      --primary-light: #fdba74;
+      --primary-glow: rgba(251, 146, 60, 0.35);
+      --star-gold: #fde047;
+      --star-glow: rgba(253, 224, 71, 0.4);
+      --accent: #34d399;
+      --accent-glow: rgba(52, 211, 153, 0.3);
+      --sky: #38bdf8;
+      --purple: #a78bfa;
       --text: #f8fafc;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
       --border: #334155;
-      --gold: #fbbf24;
       --shadow-lg: 0 16px 36px -8px rgba(0,0,0,0.65);
     }
 
@@ -43,45 +46,71 @@
     body {
       background-color: var(--bg);
       background-image: 
-        radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.16) 0px, transparent 50%),
-        radial-gradient(at 100% 30%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
-        radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.1) 0px, transparent 60%);
+        radial-gradient(at 10% 10%, rgba(251, 146, 60, 0.14) 0px, transparent 45%),
+        radial-gradient(at 90% 25%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+        radial-gradient(at 30% 75%, rgba(167, 139, 250, 0.1) 0px, transparent 50%),
+        radial-gradient(at 80% 90%, rgba(52, 211, 153, 0.1) 0px, transparent 50%);
       background-attachment: fixed;
       color: var(--text);
       font-family: 'Plus Jakarta Sans', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
       min-height: 100vh;
       padding-bottom: 96px;
+      position: relative;
+    }
+
+    /* Floating Little Stars Background Animations */
+    .star-sparkle {
+      position: fixed;
+      pointer-events: none;
+      color: var(--star-gold);
+      font-size: 14px;
+      opacity: 0.6;
+      animation: twinkle 3s infinite ease-in-out alternate;
+      z-index: 1;
+    }
+    .star-1 { top: 8%; left: 8%; animation-delay: 0.2s; }
+    .star-2 { top: 18%; right: 10%; animation-delay: 0.8s; }
+    .star-3 { top: 45%; left: 4%; animation-delay: 1.4s; }
+    .star-4 { top: 65%; right: 6%; animation-delay: 0.5s; }
+    .star-5 { top: 85%; left: 12%; animation-delay: 1.9s; }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; transform: scale(0.8) rotate(0deg); }
+      50% { opacity: 0.85; transform: scale(1.15) rotate(45deg); }
+      100% { opacity: 0.3; transform: scale(0.9) rotate(90deg); }
     }
 
     .container {
       max-width: 680px;
       margin: 0 auto;
       padding: 14px;
+      position: relative;
+      z-index: 2;
     }
 
-    /* Cover Hero Header */
+    /* Cover Hero Banner with warm fresh tones */
     .hero-banner {
       position: relative;
-      border-radius: 24px;
+      border-radius: 26px;
       overflow: hidden;
       margin-bottom: 16px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-      border: 1px solid rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.14);
     }
 
     .hero-bg {
       width: 100%;
-      height: 220px;
+      height: 230px;
       object-fit: cover;
       display: block;
-      filter: brightness(0.65) saturate(1.2);
+      filter: brightness(0.68) saturate(1.2);
     }
 
     .hero-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(9, 13, 22, 0.15) 0%, rgba(9, 13, 22, 0.95) 100%);
+      background: linear-gradient(180deg, rgba(9, 14, 26, 0.1) 0%, rgba(9, 14, 26, 0.95) 100%);
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -92,10 +121,10 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(249, 115, 22, 0.25);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(249, 115, 22, 0.5);
+      background: rgba(251, 146, 60, 0.25);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(251, 146, 60, 0.5);
       color: #ffedd5;
       padding: 4px 12px;
       border-radius: 9999px;
@@ -117,22 +146,29 @@
       margin-bottom: 4px;
     }
 
+    .title span.star-icon {
+      color: var(--star-gold);
+      font-size: 20px;
+      filter: drop-shadow(0 0 8px var(--star-gold));
+    }
+
     .subtitle {
       color: #cbd5e1;
       font-size: 12px;
-      line-height: 1.45;
+      line-height: 1.5;
     }
 
     /* Global Cost Summary Widget */
     .cost-overview-card {
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(217, 119, 6, 0.05) 100%);
-      border: 1px solid rgba(245, 158, 11, 0.35);
-      border-radius: 18px;
-      padding: 12px 14px;
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%);
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      border-radius: 20px;
+      padding: 14px 16px;
       margin-bottom: 14px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
     }
 
     .cost-stat {
@@ -142,7 +178,7 @@
 
     .cost-stat .label {
       font-size: 11px;
-      color: #fde68a;
+      color: #fef08a;
       font-weight: 600;
       margin-bottom: 2px;
     }
@@ -163,7 +199,7 @@
       position: sticky;
       top: 10px;
       z-index: 99;
-      background: rgba(13, 17, 28, 0.92);
+      background: rgba(13, 20, 36, 0.92);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -194,7 +230,7 @@
     }
 
     .tab-btn.active {
-      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
       color: #ffffff;
       box-shadow: 0 4px 18px var(--primary-glow);
     }
@@ -206,9 +242,9 @@
     }
 
     .tab-intro {
-      background: rgba(30, 41, 59, 0.5);
+      background: rgba(30, 41, 59, 0.55);
       border-left: 3px solid var(--primary);
-      padding: 10px 12px;
+      padding: 10px 14px;
       border-radius: 4px 14px 14px 4px;
       font-size: 12px;
       color: #e2e8f0;
@@ -222,7 +258,7 @@
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid var(--card-border);
-      border-radius: 22px;
+      border-radius: 24px;
       padding: 16px;
       margin-bottom: 22px;
       box-shadow: var(--shadow-lg);
@@ -234,7 +270,7 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 8px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
       padding-bottom: 8px;
     }
 
@@ -243,6 +279,13 @@
       font-weight: 800;
       color: #ffffff;
       letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .day-title .sparkle {
+      color: var(--star-gold);
     }
 
     .crowd-pill {
@@ -267,8 +310,8 @@
 
     /* Weather & Sunset Bar */
     .weather-box {
-      background: rgba(14, 165, 233, 0.08);
-      border: 1px solid rgba(14, 165, 233, 0.2);
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.2);
       border-radius: 12px;
       padding: 8px 12px;
       margin-bottom: 10px;
@@ -285,13 +328,13 @@
 
     /* Sports & Gear Widget */
     .gear-mini-bar {
-      background: rgba(139, 92, 246, 0.08);
-      border: 1px solid rgba(139, 92, 246, 0.2);
+      background: rgba(167, 139, 250, 0.08);
+      border: 1px solid rgba(167, 139, 250, 0.25);
       border-radius: 12px;
       padding: 8px 12px;
       margin-bottom: 12px;
       font-size: 11px;
-      color: #c4b5fd;
+      color: #ddd6fe;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -299,8 +342,8 @@
 
     /* Day Cost Box */
     .day-cost-bar {
-      background: rgba(245, 158, 11, 0.08);
-      border: 1px solid rgba(245, 158, 11, 0.2);
+      background: rgba(251, 191, 36, 0.08);
+      border: 1px solid rgba(251, 191, 36, 0.25);
       border-radius: 12px;
       padding: 8px 12px;
       margin-bottom: 12px;
@@ -385,21 +428,21 @@
     }
 
     .plan-toggle-btn.active.btn-plan-a {
-      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
       color: #ffffff;
-      box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+      box-shadow: 0 4px 14px rgba(251, 146, 60, 0.4);
     }
 
     .plan-toggle-btn.active.btn-plan-b {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      background: linear-gradient(135deg, #34d399 0%, #059669 100%);
       color: #ffffff;
-      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+      box-shadow: 0 4px 14px rgba(52, 211, 153, 0.4);
     }
 
     .plan-toggle-btn.active.btn-plan-c {
-      background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+      background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
       color: #ffffff;
-      box-shadow: 0 4px 14px rgba(139, 92, 246, 0.4);
+      box-shadow: 0 4px 14px rgba(167, 139, 250, 0.4);
     }
 
     .plan-content {
@@ -506,6 +549,59 @@
       padding: 6px 10px;
       border-radius: 10px;
       margin-bottom: 12px;
+    }
+
+    /* Day Timetable / Flow (超详细节奏时间线) */
+    .schedule-cluster-wrap {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(253, 224, 71, 0.2);
+      border-radius: 14px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+    }
+
+    .schedule-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fde047;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .schedule-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      position: relative;
+      padding-left: 12px;
+      border-left: 2px dashed rgba(253, 224, 71, 0.3);
+      margin-left: 6px;
+    }
+
+    .schedule-step {
+      position: relative;
+      font-size: 11px;
+    }
+
+    .schedule-step::before {
+      content: '✨';
+      position: absolute;
+      left: -20px;
+      top: -2px;
+      font-size: 10px;
+    }
+
+    .schedule-time {
+      font-weight: 700;
+      color: #fdba74;
+      margin-bottom: 1px;
+    }
+
+    .schedule-act {
+      color: #cbd5e1;
+      line-height: 1.45;
     }
 
     /* Action Nav Buttons (高德一键导航) */
@@ -724,7 +820,7 @@
 
     .check-item input[type="checkbox"] {
       margin-top: 3px;
-      accent-color: #f97316;
+      accent-color: #fb923c;
       width: 15px;
       height: 15px;
     }
@@ -796,7 +892,7 @@
 
     .share-btn {
       flex: 1;
-      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
       color: #ffffff;
       border: none;
       outline: none;
@@ -808,7 +904,7 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.45);
+      box-shadow: 0 10px 25px rgba(251, 146, 60, 0.45);
       cursor: pointer;
     }
 
@@ -852,9 +948,16 @@
 </head>
 <body>
 
+  <!-- Floating Star Sparkles -->
+  <div class="star-sparkle star-1">✨</div>
+  <div class="star-sparkle star-2">🌟</div>
+  <div class="star-sparkle star-3">💫</div>
+  <div class="star-sparkle star-4">⭐️</div>
+  <div class="star-sparkle star-5">✨</div>
+
   <div class="toast" id="toast">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-    <span id="toast-text">微信分享链接已复制！</span>
+    <span id="toast-text">✨ 微信分享链接已复制！快发给女朋友吧 🌟</span>
   </div>
 
   <div class="container">
@@ -864,10 +967,12 @@
       <div class="hero-overlay">
         <div class="meta-tag">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          深圳龙岗丹平社区出发
+          深圳龙岗丹平社区出发 · 基地化漫游
         </div>
-        <h1 class="title">深圳周边避坑反向自驾路书</h1>
-        <p class="subtitle">中秋3天 + 国庆5天 · 每日日归回家睡 · A/B/C三重平替 · 吃玩集群全清单</p>
+        <h1 class="title">
+          <span class="star-icon">✨</span> 深圳周边小清新自驾避坑路书 <span class="star-icon">🌟</span>
+        </h1>
+        <p class="subtitle">中秋3天 + 国庆5天 · 每日日归0房费 · A/B/C三重平替 · 小清新慢调吃玩全收录</p>
       </div>
     </header>
 
@@ -875,13 +980,13 @@
     <section class="cost-overview-card">
       <div class="cost-stat">
         <span class="label">🌕 中秋3天总预算 (双人)</span>
-        <span class="val">¥550 - ¥700</span>
-        <span class="sub">日均仅约 ¥200 (省下¥3000+房费)</span>
+        <span class="val">¥550 - ¥700 ✨</span>
+        <span class="sub">日均仅约 ¥200 (回丹平睡大床，省下¥3000+房费)</span>
       </div>
       <div class="cost-stat">
         <span class="label">🇨🇳 国庆5天总预算 (双人)</span>
-        <span class="val">¥980 - ¥1300</span>
-        <span class="sub">高速全免费 + 0房费 + 生猛海鲜</span>
+        <span class="val">¥980 - ¥1300 🌟</span>
+        <span class="sub">高速全免费 + 0房费 + 生猛海鲜吃到饱</span>
       </div>
     </section>
 
@@ -889,53 +994,53 @@
     <nav class="tab-nav">
       <button class="tab-btn active" onclick="switchMainTab('mid_autumn')">
         <span>🌕 中秋 3 天假期</span>
-        <span class="badge-pill">山野清凉 · 观海赏月</span>
+        <span class="badge-pill">山野清凉 · 观海赏月 ✨</span>
       </button>
       <button class="tab-btn" onclick="switchMainTab('national_day')">
         <span>🇨🇳 国庆 5 天黄金周</span>
-        <span class="badge-pill">避堵反向 · 纯净海滩</span>
+        <span class="badge-pill">避堵反向 · 纯净海滩 🌟</span>
       </button>
     </nav>
 
     <!-- Section: Mid Autumn -->
     <section id="section-mid_autumn" class="tab-section active">
       <div class="tab-intro">
-        💡 <strong>中秋避堵锦囊：</strong>假期间高速不免费，东部沿海（大梅沙/较场尾）车流易集中。本路书单程严控在 35~55 分钟内，全部采用<strong>【逆向清凉 + 每日 A/B/C 三选一 + 目的地周边吃玩集群】</strong>，傍晚赏月吃夜宵后回丹平安心睡好觉。
+        💡 <strong>中秋避堵锦囊 ✨：</strong>假期间高速不免费，东部沿海（大梅沙/较场尾）车流易集中。本路书单程严控在 35~55 分钟内，全部采用<strong>【逆向清凉 + 每日 A/B/C 三选一 + 极细致小时时间轴 + 目的地周边吃玩集群】</strong>，傍晚赏月打羽毛球，吃完夜宵回丹平安心睡好觉。
       </div>
 
       <article class="day-card" id="mid_autumn-d1">
         <div class="day-header">
-          <span class="day-title">Day 1 (中秋首日 · 9.24)</span>
-          <span class="crowd-pill">热度指数：★☆☆☆☆ (纯本地反向小众走法)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 1 (中秋首日 · 9.24)</span>
+          <span class="crowd-pill">热度指数：★☆☆☆☆ (纯本地反向小众走法，避开大梅沙99%拥堵车流)</span>
         </div>
 
         <div class="day-subtitle">
           <span>📍</span>
-          <span>马峦山碧岭飞瀑溯溪 · 大万世居客家围屋月夜 · 坪山文化聚落</span>
+          <span>马峦碧岭飞泉 · 围屋明月茶话 · 坪山慢调艺文</span>
         </div>
 
         <!-- Weather Box -->
         <div class="weather-box">
-          <span>⛅ 多云微风 25℃~31℃ | 紫外线: 中等 | 最佳日落 18:18 (18:45 海上升明月)</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span>⛅ 多云微风 25℃~31℃ | 紫外线: 中等(SPF30即可) | 最佳日落 18:18 (18:45 海上升明月)</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
         <div class="gear-mini-bar">
           <span>🏸 <strong>当日随车适玩装备：</strong></span>
-          <span>羽毛球拍2副、防风羽毛球1筒、溯溪涉水鞋/洞洞鞋、换洗干T恤、野餐垫、小音箱</span>
+          <span>🏸 羽毛球拍2副 + 防风羽毛球1筒、涉水洞洞鞋/溯溪鞋、换洗干T恤、防水野餐垫、便携小音箱</span>
         </div>
 
         <!-- Cost Bar -->
         <div class="day-cost-bar">
           <span class="tit">💰 当日双人预计花费</span>
-          <span class="val">约 ¥160~220 (双人全天含餐、油电、停车，0门票0住宿)</span>
+          <span class="val">约 ¥160~220 (双人全天含午晚两餐、手冲咖啡、油电停车，0门票0住宿)</span>
         </div>
 
         <div class="day-metrics">
           <div class="metric-item">
             <svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
-            <span>单程约 38km / 45分钟 (丹平快速→水官高速→南坪快速直达，避开东部沿海二通道大堵车)</span>
+            <span>单程约 38km / 45分钟 (丹平快速→水官高速→南坪快速，全程无拥堵隧道)</span>
           </div>
         </div>
 
@@ -946,7 +1051,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-mid_autumn-d1" onclick="switchTriplePlan('mid_autumn-d1', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-mid_autumn-d1" onclick="switchTriplePlan('mid_autumn-d1', 'c')">
               <span>🍃 备选 C</span>
@@ -965,17 +1070,57 @@
                 <span class="photo-badge" >🍲 地道风味</span>
               </div>
             </div>
-            <h4 class="spot-name">马峦山碧岭瀑布群溯溪 + 大万世居月夜围屋</h4>
+            <h4 class="spot-name">马峦山碧岭飞瀑溯溪 + 大万世居古堡月夜</h4>
             <div class="plan-cost-tag">🏷️ 门票 ¥0 | 停车 ¥10 | 客家窑鸡正餐约 ¥150</div>
-            <p class="spot-desc">从坪山碧岭步道逆向上山，绿树遮天蔽日，沿路叠水飞瀑声不绝于耳，体感比市区凉快4度！下午出山转场大万世居，全国最大客家围屋之一，外围大广场极平整适合打羽毛球，傍晚青砖灰瓦间看中秋圆月与文艺市集咖啡。</p>
+            <p class="spot-desc">从坪山碧岭步道逆向上山，绿树遮天蔽日，沿路叠水飞瀑声不绝于耳，体感比市区凉快4℃！下午出山转场全国最大客家围屋之一大万世居，外围开阔广场极平整无风，适合舒展打羽毛球；傍晚青砖灰瓦间看中秋圆月高悬，在天井咖啡馆对坐慢聊。</p>
             <div class="parking-row">
-              <span>🅿️ <strong>停车指引：</strong>碧岭瀑布步道停车场（停车费 ¥10/天，早9:30前或午后2点位多）</span>
+              <span>🅿️ <strong>停车指引：</strong>碧岭瀑布步道停车场（停车位约300个，收费首小时5元后续1元/小时，全天封顶15元。建议上午9:30前或下午14:00后到达）</span>
             </div>
 
             <a href="https://uri.amap.com/navigation?to=114.301548,22.653412,马峦山碧岭瀑布&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">09:30 - 10:15</div>
+                  <div class="schedule-act">🚗 丹平社区出发，经丹平快速接入水官高速与南坪快速三期，路况全线飘绿畅行。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">10:15 - 12:30</div>
+                  <div class="schedule-act">🌿 碧岭瀑布步道轻溯溪：换上洞洞鞋赤足浸入山泉，沿途5级叠瀑如天然空调房，登至半山亭野餐垫小憩。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">12:30 - 14:00</div>
+                  <div class="schedule-act">🍗 驱车5分钟前往碧岭窑鸡老店，吃滚烫金黄爆汁的荔枝木柴火泥烤鸡与客家酿豆腐。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">14:30 - 16:30</div>
+                  <div class="schedule-act">🎨 转场坪山美术馆/文化聚落，吹着清凉冷气漫步极简几何建筑群，拍照极有北欧高阶冷调美感。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">16:30 - 18:00</div>
+                  <div class="schedule-act">🏸 大万世居前月池草坪：支起羽毛球拍双人欢畅对拉运动，黄昏柔和微光洒在古瓦屋檐。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">18:00 - 20:30</div>
+                  <div class="schedule-act">🌕 漫步围屋庭院观赏中秋初升满月，在半日闲咖啡馆喝杯桂花酒酿拿铁，尝老字号手打牛肉丸后舒适返程丹平。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -985,7 +1130,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【坪山文化聚落（红立方 / 美术馆）】</span>
-                    <a href="https://uri.amap.com/search?keyword=坪山美术馆" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=坪山美术馆" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">距离大万世居仅8分钟车程，极具后现代工业风建筑群，冷气充足。有设计感极强的美术馆和万本书城，人少安静，傍晚室外大平台吹风视野极开阔。</div>
                 </div>
@@ -993,7 +1138,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【聚龙山生态湿地公园（花海木栈道）】</span>
-                    <a href="https://uri.amap.com/search?keyword=聚龙山公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=聚龙山公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">驱车12分钟直达，全国最大湿地公园之一。拥有环山自行车道与亲水木栈道，大片开阔平整草坪，极适合铺上野餐垫打羽毛球或放飞盘。</div>
                 </div>
@@ -1001,7 +1146,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【坪山中心公园湖畔（夜景赏月最佳机位）】</span>
-                    <a href="https://uri.amap.com/search?keyword=坪山中心公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=坪山中心公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">拥有大片湖面和大草坪，晚上倒映城市灯光与天心明月，情侣散步闲聊首选。</div>
                 </div>
@@ -1017,7 +1162,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【老牌山野柴火窑鸡农庄（碧岭总店）】</span>
-                    <a href="https://uri.amap.com/search?keyword=坪山碧岭柴火窑鸡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=坪山碧岭柴火窑鸡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 古法荔枝木瓦窑泥烤走地鸡（外皮焦脆金黄、撕开滚烫爆汁）、客家酿苦瓜豆腐、苦笋五花肉煲</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥140-160</div>
@@ -1026,7 +1171,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【大万老字号手打牛肉丸店】</span>
-                    <a href="https://uri.amap.com/search?keyword=坪山大万手打牛肉丸" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=坪山大万手打牛肉丸" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现打鲜牛肉丸生滚苦瓜汤、干捞牛筋丸粿条、秘制沙茶牛杂煲</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥70-80</div>
@@ -1035,7 +1180,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【大万世居古堡·半日闲天街咖啡】</span>
-                    <a href="https://uri.amap.com/search?keyword=大万世居咖啡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=大万世居咖啡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 中秋桂花手摇冰拿铁、客家糯米黄酒风味美式、手作豆腐花提拉米苏</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥50-60</div>
@@ -1050,11 +1195,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">横岗园山风景区大康溪谷 + 避暑水潭漫步</h4>
@@ -1066,8 +1211,43 @@
 
             <a href="https://uri.amap.com/navigation?to=114.249215,22.641235,园山风景区&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">10:00 - 10:25</div>
+                  <div class="schedule-act">🚗 丹平快速转横坪公路直达园山，仅约15公里，极其轻松。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">10:30 - 12:30</div>
+                  <div class="schedule-act">🌿 漫步大康溪谷，林木繁盛遮蔽日光，在碧玉潭边坐看微泉飞溅，水温沁凉。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">12:30 - 14:00</div>
+                  <div class="schedule-act">🍲 园山脚下品尝石斛炖土鸡汤与客家煎酿豆腐，汤甘味厚。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">14:30 - 16:30</div>
+                  <div class="schedule-act">🕶️ 驱车10分钟去横岗眼镜文创街，吹冷气挑选高性价比偏光墨镜与情侣镜框。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">17:00 - 19:30</div>
+                  <div class="schedule-act">🍲 顺路返回南湾/丹平社区，吃老字号热气现切潮汕牛肉火锅，鲜美满足。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1077,7 +1257,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【横岗眼镜城·文创街区】</span>
-                    <a href="https://uri.amap.com/search?keyword=横岗眼镜城" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=横岗眼镜城" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">离园山10分钟车程，全国最大的眼镜产业基地。里面有新潮的眼镜文创博物馆、极低批发价配高品质墨镜和防蓝光镜，顺便逛冷气步行街。</div>
                 </div>
@@ -1085,7 +1265,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【大康深山绿道与碧玉潭】</span>
-                    <a href="https://uri.amap.com/search?keyword=园山碧玉潭" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=园山碧玉潭" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">园山内部纵深步道，沿途茂林修竹，潭水碧绿如玉。潭边有天然大石坪，可坐着听瀑布声或用便携茶具泡冷泡茶。</div>
                 </div>
@@ -1101,7 +1281,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【南湾老字号八合里鲜牛肉火锅】</span>
-                    <a href="https://uri.amap.com/search?keyword=南湾八合里牛肉火锅" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=南湾八合里牛肉火锅" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现切热气吊龙伴、五花趾、匙柄、胸口朥，配牛骨原汤与炸腐竹</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥150-170</div>
@@ -1110,7 +1290,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【园山大康农家柴火走地鸡】</span>
-                    <a href="https://uri.amap.com/search?keyword=横岗大康农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=横岗大康农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 山泉水石斛炖土鸡汤、野生山坑螺煲、客家石磨煎酿豆腐</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥130-150</div>
@@ -1125,11 +1305,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">大运自然公园大草坪露营 + 神仙湖环湖慢行</h4>
@@ -1141,8 +1321,38 @@
 
             <a href="https://uri.amap.com/navigation?to=114.218412,22.695321,大运自然公园&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">14:30 - 15:00</div>
+                  <div class="schedule-act">🚗 午休后从容出发，走水官高速龙岗出口，20分钟直奔大运公园。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">15:00 - 17:00</div>
+                  <div class="schedule-act">⛺ 在缓坡大草坪支开双人月亮椅，放音乐、吃水果、打羽毛球与飞盘。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">17:00 - 18:30</div>
+                  <div class="schedule-act">🦢 漫步大运天地水上街区，看黑天鹅掠过湖面，拍日落晚霞倒影。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">18:30 - 20:30</div>
+                  <div class="schedule-act">🕊️ 吃现炸爆汁金牌乳鸽，饭后来一碗热气窝蛋姜撞奶，悠闲回家。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1152,7 +1362,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【深圳大运天地·滨湖商业街区】</span>
-                    <a href="https://uri.amap.com/search?keyword=大运天地" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=大运天地" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">环水系而建的全新开放式街区，小桥流水、黑天鹅游戈，汇聚了各种潮流咖啡馆、甜品屋与买手店，冷气十足且极其出片。</div>
                 </div>
@@ -1160,7 +1370,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【香港中文大学（深圳）后山神仙湖步道】</span>
-                    <a href="https://uri.amap.com/search?keyword=神仙湖水库" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=神仙湖水库" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">依山傍湖的栈道，学术人文气息与清幽山林交织，常有白鹭掠过水面，极少游客打扰。</div>
                 </div>
@@ -1176,7 +1386,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【大运天地·金牌红烧脆皮乳鸽】</span>
-                    <a href="https://uri.amap.com/search?keyword=大运天地乳鸽" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=大运天地乳鸽" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现炸玻璃皮乳鸽（咬开滚烫爆汁）、豉油皇大虾、煲仔咸鱼肉饼饭</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥130-150</div>
@@ -1185,7 +1395,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【顺德杨记传统手作甜汤】</span>
-                    <a href="https://uri.amap.com/search?keyword=大运甜品" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=大运甜品" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 传统窝蛋姜撞奶、招牌双皮奶、芋圆莲子百合红豆沙、炸牛奶</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥45-55</div>
@@ -1204,7 +1414,7 @@
     
       <article class="day-card" id="mid_autumn-d2">
         <div class="day-header">
-          <span class="day-title">Day 2 (中秋正日 · 9.25)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 2 (中秋正日 · 9.25)</span>
           <span class="crowd-pill">热度指数：★★☆☆☆ (完胜人挤人的较场尾/大梅沙)</span>
         </div>
 
@@ -1216,7 +1426,7 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <span>🌤️ 晴转少云 26℃~32℃ | 紫外线: 较高 (海边备防晒) | 最佳日落 18:17 (海上升明月)</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
@@ -1245,7 +1455,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-mid_autumn-d2" onclick="switchTriplePlan('mid_autumn-d2', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-mid_autumn-d2" onclick="switchTriplePlan('mid_autumn-d2', 'c')">
               <span>🍃 备选 C</span>
@@ -1268,13 +1478,53 @@
             <div class="plan-cost-tag">🏷️ 门票 ¥0 | 停车 ¥15 | 葵涌老街黄椒炒八爪鱼双人约 ¥180</div>
             <p class="spot-desc">避开南澳堵车大军，直奔大鹏最东北端的原生态处女地。500年古银叶树板根硕大，木栈道一路延伸进海湾，退潮时下滩涂抓小寄居蟹和小海螺。傍晚坐在白沙湾看无遮挡橘子海落日与海上升明月！</p>
             <div class="parking-row">
-              <span>🅿️ <strong>停车指引：</strong>坝光湿地生态停车场（车位充裕，无需大鹏半岛拥堵排队）</span>
+              <span>🅿️ <strong>停车指引：</strong>坝光湿地生态停车场（车位充裕，无需大鹏半岛拥堵排队，15元/天封顶）</span>
             </div>
 
             <a href="https://uri.amap.com/navigation?to=114.521820,22.646549,坝光银叶树湿地园&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">08:30 - 09:30</div>
+                  <div class="schedule-act">🚗 避开车流高峰，从丹平经水官转惠深沿海高速直抵葵涌，顺畅进坝光。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">09:30 - 12:00</div>
+                  <div class="schedule-act">🦀 漫步500年古银叶树林海栈道，趁低潮在白沙湾滩涂赶海，拾贝壳捉寄居蟹。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">12:00 - 13:30</div>
+                  <div class="schedule-act">🐙 葵涌老街吃刚靠岸海鲜，脆嫩爆炒野生小八爪鱼与蒜蓉蒸带子。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">14:00 - 16:00</div>
+                  <div class="schedule-act">🏛️ 漫步东江纵队纪念馆与老街红砖骑楼，树荫浓密闲适。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">16:30 - 18:30</div>
+                  <div class="schedule-act">🏸 白沙湾滨海草坪：支起羽毛球拍运动对打，随后并肩坐看橘子海晚霞与海上升明月！</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">18:40 - 20:00</div>
+                  <div class="schedule-act">🚗 吃饱海风后踏着月色轻松返程丹平，不塞车舒服归巢。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1284,7 +1534,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【葵涌东江纵队纪念馆与老街骑楼】</span>
-                    <a href="https://uri.amap.com/search?keyword=东江纵队纪念馆" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=东江纵队纪念馆" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">离坝光12分钟车程，浓郁的岭南历史风貌街区，老街古朴安宁，红砖骑楼适合漫步，没有喧闹的商业小吃街。</div>
                 </div>
@@ -1292,7 +1542,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【排牙山麓脚下茶园与水库观景台】</span>
-                    <a href="https://uri.amap.com/search?keyword=排牙山观景台" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=排牙山观景台" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">沿排牙山盘山道行驶5分钟，俯瞰整个大亚湾海平面的观景平台，海风呼啸吹拂，云雾缭绕如同仙境。</div>
                 </div>
@@ -1300,7 +1550,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【白沙湾红树林露营草坪（打羽毛球绝佳地）】</span>
-                    <a href="https://uri.amap.com/search?keyword=坝光白沙湾" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=坝光白沙湾" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">湿地公园旁平坦的滨海海风草坪，背靠大山面朝大海，傍晚风势缓和，打羽毛球和散步非常舒适。</div>
                 </div>
@@ -1316,7 +1566,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【葵涌老街无名野生海鲜排档】</span>
-                    <a href="https://uri.amap.com/search?keyword=葵涌老街海鲜" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=葵涌老街海鲜" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 爆炒本地小八爪鱼、黄椒酱生蒸泥鯭鱼、蒜蓉粉丝蒸本地鲜开边带子</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥170-190</div>
@@ -1325,7 +1575,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【水头海鲜街自选代加工小馆】</span>
-                    <a href="https://uri.amap.com/search?keyword=大鹏水头海鲜街" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=大鹏水头海鲜街" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 白灼九节虾、椒盐富贵虾（皮皮虾）、姜葱炒本地海花蟹</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥190-220</div>
@@ -1334,7 +1584,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【坝光山海林下竹筒饭农家院】</span>
-                    <a href="https://uri.amap.com/search?keyword=坝光农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=坝光农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现烤腊味竹筒饭、柴火土窑走地鸡、白灼本地野生雷公笋</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥110-130</div>
@@ -1349,11 +1599,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">惠阳澳头小桂村沿海绿道骑行 (免大鹏预约)</h4>
@@ -1365,8 +1615,38 @@
 
             <a href="https://uri.amap.com/navigation?to=114.582103,22.709321,小桂村绿道&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">09:30 - 10:20</div>
+                  <div class="schedule-act">🚗 丹平出发走惠深沿海在小桂下，完全不进大鹏预约管制区。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">10:30 - 12:30</div>
+                  <div class="schedule-act">🚲 租双人自行车环碧海绿道骑行，沿途海风习习，打卡白塔与渔港。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">12:30 - 14:00</div>
+                  <div class="schedule-act">🦐 澳头海鲜码头现挑活跳九节虾与大花蟹，直接在码头渔排蒸熟吃。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">14:30 - 16:30</div>
+                  <div class="schedule-act">🏸 小桂驿站平整空坪打羽毛球，背靠大山看海景，悠闲松弛。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1376,7 +1656,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【澳头海鲜市场与老渔港码头】</span>
-                    <a href="https://uri.amap.com/search?keyword=澳头海鲜市场" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=澳头海鲜市场" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">渔船归港直接售卖，可以和渔民砍价挑选刚出海的活蟹大虾，充满人间烟火气。</div>
                 </div>
@@ -1384,7 +1664,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【衙前滨海绿道灯塔（小圣托里尼风机位）】</span>
-                    <a href="https://uri.amap.com/search?keyword=惠阳衙前村" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=惠阳衙前村" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">离小桂村10分钟，纯白灯塔与蔚蓝海岸，拍照极为吸睛出片。</div>
                 </div>
@@ -1400,7 +1680,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【澳头海鲜码头第一线渔排加工】</span>
-                    <a href="https://uri.amap.com/search?keyword=惠阳澳头海鲜码头" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=惠阳澳头海鲜码头" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现靠岸基围虾白灼、豉汁炒海瓜子、海胆蒸水蛋、本地杂鱼汤</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥150-170</div>
@@ -1409,7 +1689,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【小桂绿道渔家客家窑鸡】</span>
-                    <a href="https://uri.amap.com/search?keyword=小桂村窑鸡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=小桂村窑鸡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 咸香手撕鸡、炸海藻鲜虾饼、农家现炒番薯叶</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥110-120</div>
@@ -1424,11 +1704,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1535473897047-b6745f657a84?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">盐田海鲜街后方海滨栈道慢行 + 盐田港夜色</h4>
@@ -1440,8 +1720,33 @@
 
             <a href="https://uri.amap.com/navigation?to=114.258923,22.583412,盐田海鲜食街&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">15:30 - 16:15</div>
+                  <div class="schedule-act">🚗 错开白天车流，午后惬意开往盐田海鲜食街。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">16:30 - 18:30</div>
+                  <div class="schedule-act">🌊 漫步海景栈道看盐田巨轮缓缓进出港，日落金色光芒倾泻海面。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">18:30 - 20:30</div>
+                  <div class="schedule-act">🍲 喝一煲热气滚滚的鲜活膏蟹基围虾砂锅粥，尝尝沙头角香脆乳鸽。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1451,7 +1756,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【中英街历史博物馆与海景栈道】</span>
-                    <a href="https://uri.amap.com/search?keyword=中英街历史博物馆" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=中英街历史博物馆" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">提前在公众号预约免门票，感受一街两制的独特风情，傍晚在沙头角海滨栈道看夕阳。</div>
                 </div>
@@ -1459,7 +1764,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【大梅沙灯塔图书馆（外围海滨草坪）】</span>
-                    <a href="https://uri.amap.com/search?keyword=栖息图书馆" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=栖息图书馆" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">白色独栋灯塔造型，坐落在礁石海岸边，听着涛声看落日极度治愈。</div>
                 </div>
@@ -1475,7 +1780,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【潮记地道鲜虾蟹肉砂锅粥】</span>
-                    <a href="https://uri.amap.com/search?keyword=盐田海鲜街砂锅粥" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=盐田海鲜街砂锅粥" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 鲜活膏蟹配基围虾现熬稠粥、炸普宁豆干配韭菜盐水、卤水鹅肉拼盘</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥140-160</div>
@@ -1484,7 +1789,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【沙头角百年肠粉与乳鸽小馆】</span>
-                    <a href="https://uri.amap.com/search?keyword=沙头角肠粉" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=沙头角肠粉" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 石磨鲜虾肠粉、红烧脆皮小乳鸽、猪红韭菜汤</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥70-80</div>
@@ -1503,7 +1808,7 @@
     
       <article class="day-card" id="mid_autumn-d3">
         <div class="day-header">
-          <span class="day-title">Day 3 (中秋收官 · 9.26)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 3 (中秋收官 · 9.26)</span>
           <span class="crowd-pill">热度指数：★☆☆☆☆ (纯本地自驾吸氧胜地)</span>
         </div>
 
@@ -1515,7 +1820,7 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <span>⛅ 阴天间多云 24℃~30℃ | 紫外线: 弱 | 最佳日落 18:16</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
@@ -1544,7 +1849,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-mid_autumn-d3" onclick="switchTriplePlan('mid_autumn-d3', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-mid_autumn-d3" onclick="switchTriplePlan('mid_autumn-d3', 'c')">
               <span>🍃 备选 C</span>
@@ -1572,8 +1877,43 @@
 
             <a href="https://uri.amap.com/navigation?to=114.073289,22.782012,大屏嶂森林公园&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">10:00 - 10:35</div>
+                  <div class="schedule-act">🚗 丹平快速转清平高速快速直达塘厦，30分钟无缝切换进森林。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">10:40 - 12:30</div>
+                  <div class="schedule-act">🌲 沿大坪水库林荫慢跑漫步，满目翠绿，在芳香植物园旁草坪打羽毛球。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">12:30 - 14:00</div>
+                  <div class="schedule-act">🍲 品尝塘厦传统瓦煲碌鹅，酱汁浓油赤酱，肉质紧致入味，连吃两碗米饭。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">14:30 - 16:30</div>
+                  <div class="schedule-act">☕ 树荫下支起折叠月亮椅，冲上一杯手冲咖啡听鸟鸣吹山风。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">16:30 - 17:15</div>
+                  <div class="schedule-act">🚗 错开晚间返程高峰，轻松回丹平，早早洗热水澡休息。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1583,7 +1923,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【塘厦三正半山湖畔湿地步道】</span>
-                    <a href="https://uri.amap.com/search?keyword=塘厦三正半山" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=塘厦三正半山" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">环绕天然湖泊而建的隐秘步道，欧式建筑倒映湖中，人迹罕至，两旁有白鹭聚集与水杉倒影，极其静谧浪漫。</div>
                 </div>
@@ -1591,7 +1931,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【大屏嶂芳香植物园（羽毛球草坪胜地）】</span>
-                    <a href="https://uri.amap.com/search?keyword=大屏嶂芳香植物园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=大屏嶂芳香植物园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">公园内部种植上百种芳香花木，开阔平整的林间草坪四周有天然林木挡风，打羽毛球手感极佳。</div>
                 </div>
@@ -1607,7 +1947,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【塘厦林氏地道瓦煲传统碌鹅】</span>
-                    <a href="https://uri.amap.com/search?keyword=塘厦正宗碌鹅" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=塘厦正宗碌鹅" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 金牌瓦煲碌鹅（鹅皮弹韧酱汁浓厚，鹅肉软烂入味拌饭绝顶）、柴火农家豆腐</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥140-160</div>
@@ -1616,7 +1956,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【水库旁客家山泉水煲鸡农庄】</span>
-                    <a href="https://uri.amap.com/search?keyword=塘厦农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=塘厦农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 山泉水石螺煲走地鸡、蒸客家艾糍粄、柴火锅巴饭</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥120-140</div>
@@ -1631,11 +1971,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">龙岗红花岭生态公园水库步道 + 登顶眺望</h4>
@@ -1647,8 +1987,28 @@
 
             <a href="https://uri.amap.com/navigation?to=114.228912,22.716301,红花岭生态公园&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">14:00 - 16:30</div>
+                  <div class="schedule-act">🌲 环龙口水库栈道慢步登高，远眺龙岗全城与连绵青山。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">17:00 - 18:30</div>
+                  <div class="schedule-act">🥣 平湖守珍街老铺打卡手工香滑芝麻糊、姜汁撞奶与客家肠粉。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1658,7 +2018,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【平湖守珍街老火车站旧址】</span>
-                    <a href="https://uri.amap.com/search?keyword=平湖火车站" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=平湖火车站" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">旧铁轨与老火车站货站，红砖站台与绿皮火车车厢，适合拍怀旧复古风格照片。</div>
                 </div>
@@ -1666,7 +2026,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【龙口水库大坝夕阳长堤】</span>
-                    <a href="https://uri.amap.com/search?keyword=龙口水库" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=龙口水库" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">视野无遮挡的坝顶水泥长堤，傍晚微风徐徐，看晚霞映照水面，极少人打扰。</div>
                 </div>
@@ -1682,7 +2042,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【平湖守珍街三十年老牌糖水铺】</span>
-                    <a href="https://uri.amap.com/search?keyword=平湖守珍街美食" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=平湖守珍街美食" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 石磨香滑芝麻糊、手撞热姜汁撞奶、炸小油糍、秘制鲜香牛杂煲</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥45-55</div>
@@ -1691,7 +2051,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【平湖老车站地道石磨肠粉】</span>
-                    <a href="https://uri.amap.com/search?keyword=平湖老街肠粉" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=平湖老街肠粉" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 抽屉式石磨鲜虾鸡蛋肠粉、花生白粥、炸酥肉</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥30-40</div>
@@ -1706,11 +2066,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">甘坑古镇后山二十四史书院书香夜游</h4>
@@ -1722,8 +2082,28 @@
 
             <a href="https://uri.amap.com/navigation?to=114.129845,22.641290,二十四史书院&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
+            <div class="schedule-cluster-wrap">
+              <div class="schedule-title">⏰ <strong>从早到晚·极细致小时时间线 (避堵节奏)：</strong></div>
+              <div class="schedule-timeline">
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">16:00 - 18:00</div>
+                  <div class="schedule-act">🏮 漫步甘坑客家老街青石板路，探访家风家训馆与碉楼。</div>
+                </div>
+                
+                <div class="schedule-step">
+                  <div class="schedule-time">18:00 - 21:00</div>
+                  <div class="schedule-act">✨ 进入二十四史书院看万盏华灯初上，亭台楼阁倒映水中，围炉品茶赏月。</div>
+                </div>
+                
+              </div>
+            </div>
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1733,7 +2113,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【甘坑客家小镇·家风家训馆与炮楼】</span>
-                    <a href="https://uri.amap.com/search?keyword=甘坑炮楼" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=甘坑炮楼" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">穿梭在百年碉楼与青石板巷弄间，古朴民居里有皮影戏展馆和非遗民俗展示。</div>
                 </div>
@@ -1741,7 +2121,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【甘坑后山绿道（生态观鸟台）】</span>
-                    <a href="https://uri.amap.com/search?keyword=甘坑公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=甘坑公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">书院后方的纯原生态登山绿道，树影摇曳，林荫避暑。</div>
                 </div>
@@ -1757,7 +2137,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【甘坑客家小筑传统黄酒酿鸡】</span>
-                    <a href="https://uri.amap.com/search?keyword=甘坑客家菜" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=甘坑客家菜" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 糯米黄酒煮土鸡（汤甜肉香极其暖身）、客家纸包豆腐、手打艾叶糍粑</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥130-150</div>
@@ -1766,7 +2146,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【二十四史书院·庭院煮茶雅舍】</span>
-                    <a href="https://uri.amap.com/search?keyword=甘坑古镇围炉煮茶" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=甘坑古镇围炉煮茶" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 陈皮白茶炭火煨煮、烤红薯板栗、精致桂花绿豆糕</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥90-110</div>
@@ -1787,12 +2167,12 @@
     <!-- Section: National Day -->
     <section id="section-national_day" class="tab-section">
       <div class="tab-intro">
-        💡 <strong>国庆反向自驾法则：</strong>国庆高速全免费、全网出行井喷！本路线严格践行<strong>【10.1留在深莞边界避堵，10.2深入客家古村，10.3直奔冷门深汕海滩，10.4走顺德老街寻味，10.5登第一峰吸氧】</strong>，天天回家睡大床，省下天价酒店！
+        💡 <strong>国庆反向自驾法则 🌟：</strong>国庆高速全免费、全网出行井喷！本路线严格践行<strong>【10.1留在深莞边界避堵，10.2深入客家古村，10.3直奔冷门深汕海滩，10.4走顺德老街寻味，10.5登第一峰吸氧】</strong>，天天回家睡大床，省下天价酒店！
       </div>
         
       <article class="day-card" id="national_day-d1">
         <div class="day-header">
-          <span class="day-title">Day 1 (10.1 首日大堵车 · 逆向静止)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 1 (10.1 首日大堵车 · 逆向静止)</span>
           <span class="crowd-pill">热度指数：★☆☆☆☆ (避开全网高速大拥堵的黄金智慧)</span>
         </div>
 
@@ -1804,7 +2184,7 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <span>🌤️ 秋高气爽 23℃~31℃ | 紫外线: 中等 | 最佳日落 18:10</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
@@ -1833,7 +2213,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-national_day-d1" onclick="switchTriplePlan('national_day-d1', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-national_day-d1" onclick="switchTriplePlan('national_day-d1', 'c')">
               <span>🍃 备选 C</span>
@@ -1861,8 +2241,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.184321,22.712104,官井头水库&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1872,7 +2255,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【南门山森林公园（天鹅湖水上绿道）】</span>
-                    <a href="https://uri.amap.com/search?keyword=南门山森林公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=南门山森林公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">离官井头水库仅8分钟车程，万亩荔枝林与湖泊环绕，有专门的绿道、风雨桥和大面积野餐草坪，极适合打羽毛球与徒步。</div>
                 </div>
@@ -1880,7 +2263,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【凤岗历史碉楼老围村】</span>
-                    <a href="https://uri.amap.com/search?keyword=凤岗碉楼" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=凤岗碉楼" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">藏在深林里的西式与客家结合碉楼古建筑，人少安静，青苔爬满老砖墙，复古文艺大片随手拍。</div>
                 </div>
@@ -1896,7 +2279,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【凤岗老街正宗炭火瓦煲黄鳝饭】</span>
-                    <a href="https://uri.amap.com/search?keyword=凤岗客家黄鳝饭" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=凤岗客家黄鳝饭" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现点现焗台山黄鳝饭（手撕黄鳝丝拌金黄香脆锅巴，粒粒泛光）、椒盐九肚鱼</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥120-140</div>
@@ -1905,7 +2288,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【龙凤山庄后山客家农家大锅鸭】</span>
-                    <a href="https://uri.amap.com/search?keyword=凤岗客家农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=凤岗客家农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 柴火土灶烧鸭、客家酿苦瓜煲、农家石磨滑豆腐</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥110-130</div>
@@ -1920,11 +2303,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">平湖生态园（平湖水库千亩湿地环湖跑道）</h4>
@@ -1936,8 +2319,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.129302,22.684120,平湖生态园&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -1947,7 +2333,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【平湖新南水杉林草坪】</span>
-                    <a href="https://uri.amap.com/search?keyword=平湖生态园草坪" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=平湖生态园草坪" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">深秋水杉林渐红，湖边有一大片开阔缓坡草坪，背风遮阳，带折叠椅和咖啡发呆极佳。</div>
                 </div>
@@ -1963,7 +2349,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【南湾/丹竹头老牌胡椒猪肚鸡总店】</span>
-                    <a href="https://uri.amap.com/search?keyword=南湾客家猪肚鸡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=南湾客家猪肚鸡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 浓白海南白胡椒煲土鸡汤（第一碗喝汤暖身提神）、爽脆猪肚片、手打香菇肉丸</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥130-150</div>
@@ -1972,7 +2358,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【平湖地道潮汕生腌与砂锅粥】</span>
-                    <a href="https://uri.amap.com/search?keyword=平湖生腌海鲜" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=平湖生腌海鲜" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 生腌膏蟹拼皮皮虾、鲜虾生蚝砂锅粥、炸普宁豆干</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥120-140</div>
@@ -1987,11 +2373,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">平湖守珍街老铁路漫步 + 凤凰山矿山公园</h4>
@@ -2003,8 +2389,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.135210,22.693210,凤凰山矿山公园&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2014,7 +2403,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【凤凰山国家矿山公园观景长廊】</span>
-                    <a href="https://uri.amap.com/search?keyword=凤凰山矿山公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=凤凰山矿山公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">环绕碧绿矿坑湖建立的悬空木质观景长廊，四周断崖壁立，水色呈现青蓝色，视觉冲击强烈。</div>
                 </div>
@@ -2030,7 +2419,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【平湖老街深夜大排档】</span>
-                    <a href="https://uri.amap.com/search?keyword=平湖老街大排档" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=平湖老街大排档" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 鲜炸酥脆小肉丸、生滚枸杞叶猪杂及第汤、现炒干炒牛河</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥50-70</div>
@@ -2049,7 +2438,7 @@
     
       <article class="day-card" id="national_day-d2">
         <div class="day-header">
-          <span class="day-title">Day 2 (10.2 · 避世古围屋田园漫步)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 2 (10.2 · 避世古围屋田园漫步)</span>
           <span class="crowd-pill">热度指数：★★☆☆☆ (文艺幽静，无商业嘈杂)</span>
         </div>
 
@@ -2061,7 +2450,7 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <span>⛅ 多云间晴 24℃~30℃ | 紫外线: 中等 | 最佳日落 18:09</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
@@ -2090,7 +2479,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-national_day-d2" onclick="switchTriplePlan('national_day-d2', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-national_day-d2" onclick="switchTriplePlan('national_day-d2', 'c')">
               <span>🍃 备选 C</span>
@@ -2118,8 +2507,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.431204,22.802195,秋长谷里&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2129,7 +2521,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【叶挺将军纪念园（免费国家级森林人文园）】</span>
-                    <a href="https://uri.amap.com/search?keyword=叶挺将军故里" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=叶挺将军故里" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">离秋长谷里仅5分钟车程，红花绿树掩映，有清澈的人工湖和成片幽静的大草坪，游人极少，适合散步和铺野餐垫打羽毛球。</div>
                 </div>
@@ -2137,7 +2529,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【碧溪古村碉楼群与古梯田】</span>
-                    <a href="https://uri.amap.com/search?keyword=惠阳碧溪村" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=惠阳碧溪村" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">保持原汁原味的古村落，石板路上有散养土鸡走动，梯田稻谷飘香，拍照具有油画般质感。</div>
                 </div>
@@ -2153,7 +2545,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【秋长古村旁老农庄柴火三杯鸭】</span>
-                    <a href="https://uri.amap.com/search?keyword=惠阳秋长客家农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=惠阳秋长客家农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 大铁锅柴火慢煨三杯鸭（色泽红润醇厚、肉质紧实不柴）、现打客家艾粄糍粑</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥150-170</div>
@@ -2162,7 +2554,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【谷里天街古树庭院精品咖啡】</span>
-                    <a href="https://uri.amap.com/search?keyword=秋长谷里咖啡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=秋长谷里咖啡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 桂花冰摇拿铁、手作陈皮冷萃、手冲巴拿马瑰夏、客家黄酒酿芝士蛋糕</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥60-70</div>
@@ -2177,11 +2569,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1528728329032-2972f65dfb3f?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">深圳观澜版画村 + 牛湖老街手作工坊</h4>
@@ -2193,8 +2585,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.078921,22.723145,观澜版画村&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2204,7 +2599,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【鳌湖艺术村（牛湖老街文艺小店）】</span>
-                    <a href="https://uri.amap.com/search?keyword=鳌湖艺术村" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=鳌湖艺术村" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">艺术创作者聚集的隐秘社区，各种手作陶艺、涂鸦老墙与静谧咖啡馆，漫步非常松弛。</div>
                 </div>
@@ -2220,7 +2615,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【观澜老街老字号梅州客家腌面】</span>
-                    <a href="https://uri.amap.com/search?keyword=观澜老街客家腌面" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=观澜老街客家腌面" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 金牌猪油蒜香客家腌面、鲜枸杞叶三及第猪杂滚汤、手工酿豆腐</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥50-60</div>
@@ -2229,7 +2624,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【牛湖古碉楼下民间柴火煨鸡】</span>
-                    <a href="https://uri.amap.com/search?keyword=观澜农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=观澜农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 荷叶清蒸走地土鸡、野生山坑笋炒土花肉、清甜玉米粑粑</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥100-120</div>
@@ -2244,11 +2639,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">坪山金龟自然村客家山林漫步</h4>
@@ -2260,8 +2655,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.402134,22.651230,金龟自然村&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2271,7 +2669,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【金龟露营小镇草坪（无风打球地）】</span>
-                    <a href="https://uri.amap.com/search?keyword=金龟露营小镇" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=金龟露营小镇" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">四面环山的谷底大草坪，两侧溪水清浅，微风和煦，打羽毛球不乱飞。</div>
                 </div>
@@ -2287,7 +2685,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【金龟村山泉水石磨豆腐农庄】</span>
-                    <a href="https://uri.amap.com/search?keyword=金龟村农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=金龟村农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 金黄焦香煎酿山泉豆腐、香煎土鸡蛋、苦斋婆土猪排骨汤</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥100-120</div>
@@ -2306,7 +2704,7 @@
     
       <article class="day-card" id="national_day-d3">
         <div class="day-header">
-          <span class="day-title">Day 3 (10.3 · 纯净深蓝海滩)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 3 (10.3 · 纯净深蓝海滩)</span>
           <span class="crowd-pill">热度指数：★★☆☆☆ (完胜惠州双月湾的人头海)</span>
         </div>
 
@@ -2318,7 +2716,7 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <span>☀️ 晴朗碧海 25℃~32℃ | 紫外线: 极高 (必涂防晒霜) | 最佳日落 18:08</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
@@ -2347,7 +2745,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-national_day-d3" onclick="switchTriplePlan('national_day-d3', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-national_day-d3" onclick="switchTriplePlan('national_day-d3', 'c')">
               <span>🍃 备选 C</span>
@@ -2375,8 +2773,11 @@
 
             <a href="https://uri.amap.com/navigation?to=115.112930,22.784012,百安海滩&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2386,7 +2787,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【鲘门渔港老码头（千帆归航日落）】</span>
-                    <a href="https://uri.amap.com/search?keyword=鲘门港" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=鲘门港" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">距离百安海滩仅7分钟车程，傍晚17:30渔船鸣笛归港，漫天橘红晚霞映照波光粼粼的港湾，海鲜大排档灯火初上，渔家风情拉满。</div>
                 </div>
@@ -2394,7 +2795,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【芒屿岛远眺观景平台与沿海风车山】</span>
-                    <a href="https://uri.amap.com/search?keyword=深汕风车山" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=深汕风车山" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">沿海滨公路行驶，白色巨大风车在蔚蓝天际下缓缓转动，俯瞰月牙形海湾全景，视野震撼无遮挡。</div>
                 </div>
@@ -2402,7 +2803,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【红泉沙滩（更加清幽的原生态野海）】</span>
-                    <a href="https://uri.amap.com/search?keyword=红泉沙滩" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=红泉沙滩" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">与百安相邻的海滩，沙滩平缓，几乎没有游客，只有几只归海小渔船，在硬沙滩上打羽毛球球感极佳！</div>
                 </div>
@@ -2418,7 +2819,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【鲘门港口老牌海鲜饭店】</span>
-                    <a href="https://uri.amap.com/search?keyword=鲘门海鲜饭店" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=鲘门海鲜饭店" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现煮手打鲜马鲛鱼丸汤（汤清肉脆弹性惊人）、满膏红鲟蒸糯米饭、姜葱爆海白虾</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥200-240</div>
@@ -2427,7 +2828,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【百安海滨渔家乐现捞加工小铺】</span>
-                    <a href="https://uri.amap.com/search?keyword=鲘门百安海鲜" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=鲘门百安海鲜" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 蒜蓉清蒸海捕野生生蚝、椒盐皮皮虾、鲘门特产海马滋补汤</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥170-200</div>
@@ -2442,11 +2843,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">大鹏杨梅坑鹿嘴山庄清晨追光快线</h4>
@@ -2458,8 +2859,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.593210,22.569431,鹿嘴山庄&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2469,7 +2873,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【杨梅坑天然礁石海谷栈道】</span>
-                    <a href="https://uri.amap.com/search?keyword=杨梅坑鹿嘴栈道" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=杨梅坑鹿嘴栈道" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">沿悬崖步道一路走向海蚀洞，海水碧绿如宝石，浪花拍岸卷起千堆雪。</div>
                 </div>
@@ -2485,7 +2889,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【南澳杨梅坑老字号海胆炒饭】</span>
-                    <a href="https://uri.amap.com/search?keyword=大鹏海胆炒饭" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=大鹏海胆炒饭" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 金黄诱人本地野生海胆炒饭（米粒金黄颗颗裹海胆）、柴火窑鸡、清蒸野生海石斑</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥150-170</div>
@@ -2494,7 +2898,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【水头海鲜街名厨加工排档】</span>
-                    <a href="https://uri.amap.com/search?keyword=水头海鲜街" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=水头海鲜街" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 白灼深海大花虾、避风塘炒本地膏蟹、鲜海虾海鲜粥</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥160-190</div>
@@ -2509,11 +2913,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">惠东范和古村 + 亚婆角滨海公路慢游</h4>
@@ -2525,8 +2929,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.882103,22.812340,范和古村&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2536,7 +2943,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【范和罗冈围古戏台与古庙】</span>
-                    <a href="https://uri.amap.com/search?keyword=范和古村戏台" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=范和古村戏台" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">六百年历史的水乡古村，布局如棋盘，红墙黑瓦古榕树，安宁静谧。</div>
                 </div>
@@ -2552,7 +2959,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【范和老街百年石磨猪肠粉】</span>
-                    <a href="https://uri.amap.com/search?keyword=惠东范和古村美食" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=惠东范和古村美食" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 刚出炉米香扑鼻的肠粉卷秘制肉末香菇酱、葱油干拌石磨粉、炸小油角</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥35-45</div>
@@ -2571,7 +2978,7 @@
     
       <article class="day-card" id="national_day-d4">
         <div class="day-header">
-          <span class="day-title">Day 4 (10.4 · 跨海工程与世界美食)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 4 (10.4 · 跨海工程与世界美食)</span>
           <span class="crowd-pill">热度指数：★★★☆☆ (避开华侨城，只钻市井老巷)</span>
         </div>
 
@@ -2583,7 +2990,7 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <span>🌤️ 清爽微风 24℃~31℃ | 紫外线: 中等 | 最佳日落 18:07 (伶仃洋晚霞)</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
@@ -2612,7 +3019,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-national_day-d4" onclick="switchTriplePlan('national_day-d4', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-national_day-d4" onclick="switchTriplePlan('national_day-d4', 'c')">
               <span>🍃 备选 C</span>
@@ -2640,8 +3047,11 @@
 
             <a href="https://uri.amap.com/navigation?to=113.298210,22.774512,容桂渔人码头&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2651,7 +3061,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【德胜河南岸滨江公园（江风羽毛球草坪）】</span>
-                    <a href="https://uri.amap.com/search?keyword=德胜河南岸公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=德胜河南岸公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">沿顺德母亲河德胜河而建的带状滨江公园，绿草如茵，江风习习，对岸是顺德新城现代天际线，在此打羽毛球神清气爽！</div>
                 </div>
@@ -2659,7 +3069,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【柴油机1959文创园区（复古工业胶片风）】</span>
-                    <a href="https://uri.amap.com/search?keyword=柴油机1959" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=柴油机1959" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">由老工厂改造成的红砖红墙文创区，林荫遮蔽，有许多创意手作工坊、咖啡小馆与老厂房涂鸦，拍照极有复古格调。</div>
                 </div>
@@ -2667,7 +3077,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【容桂树生桥历史奇观】</span>
-                    <a href="https://uri.amap.com/search?keyword=树生桥" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=树生桥" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">300年榕树气根自然缠绕形成的天然古桥，旁边是宁静的江南水乡河涌，老人们在树下下棋乘凉，毫无商业喧嚣。</div>
                 </div>
@@ -2683,7 +3093,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【容桂街坊私藏·阿多地道桑拿菜】</span>
-                    <a href="https://uri.amap.com/search?keyword=容桂阿多桑拿鸡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=容桂阿多桑拿鸡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 现点活鸡剔骨桑拿蒸（精准沙漏3分钟揭盖，鸡肉嫩滑多汁毫无纤维感）、原汁鸡骨虫草花粥底</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥170-190</div>
@@ -2692,7 +3102,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【民信老铺容桂分店（免排队）】</span>
-                    <a href="https://uri.amap.com/search?keyword=容桂民信老铺" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=容桂民信老铺" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 热原只水牛奶双皮奶、炸香脆牛奶块、现滚生滚及第牛肉粥</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥50-70</div>
@@ -2701,7 +3111,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【德胜河畔·水牛乳咖啡小馆】</span>
-                    <a href="https://uri.amap.com/search?keyword=容桂渔人码头咖啡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=容桂渔人码头咖啡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 顺德水牛奶拿铁、黑松露巴斯克芝士蛋糕</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥55-65</div>
@@ -2716,11 +3126,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">中山南朗崖口村金色海边稻田与集装箱咖啡</h4>
@@ -2732,8 +3142,11 @@
 
             <a href="https://uri.amap.com/navigation?to=113.568412,22.482190,崖口村稻田&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2743,7 +3156,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【翠亨村孙中山故里红墙步道】</span>
-                    <a href="https://uri.amap.com/search?keyword=孙中山故居" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=孙中山故居" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">离崖口村5分钟，红砖欧式中西合璧建筑，林荫蔽日，草坪修剪平整，历史人文与自然风光融合。</div>
                 </div>
@@ -2751,7 +3164,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【崖口红树林海堤（看日落伶仃洋）】</span>
-                    <a href="https://uri.amap.com/search?keyword=崖口海堤" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=崖口海堤" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">漫步海堤看退潮滩涂与海鸥掠水，落日余晖洒在海面上极其出片。</div>
                 </div>
@@ -2767,7 +3180,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【中山崖口人家正宗馄饨铺】</span>
-                    <a href="https://uri.amap.com/search?keyword=中山崖口云吞" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=中山崖口云吞" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 皮薄如蝉翼现包鲜虾蟹子云吞、炭火生焗脆皮黄鳝煲仔饭（底焦金黄酥脆）</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥90-110</div>
@@ -2776,7 +3189,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【崖口稻田临海集装箱咖啡】</span>
-                    <a href="https://uri.amap.com/search?keyword=崖口村集装箱咖啡" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=崖口村集装箱咖啡" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 海风生椰拿铁、稻香冷萃咖啡、手作柠檬茶</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥45-55</div>
@@ -2791,11 +3204,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">中山石岐老街孙文西路 + 岐江夜色</h4>
@@ -2807,8 +3220,11 @@
 
             <a href="https://uri.amap.com/navigation?to=113.374210,22.521098,孙文西路步行街&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2818,7 +3234,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【岐江公园（工业造船厂旧址改建）】</span>
-                    <a href="https://uri.amap.com/search?keyword=岐江公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=岐江公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">荣获国际景观设计大奖的公园，铁轨、红砖水塔与江畔草坪相映成趣，打羽毛球或漫步非常舒适。</div>
                 </div>
@@ -2834,7 +3250,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【石岐佬老牌传统中山粤菜】</span>
-                    <a href="https://uri.amap.com/search?keyword=石岐红烧乳鸽" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=石岐红烧乳鸽" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 百年招牌红烧石岐乳鸽（玻璃脆皮流汁）、香炸大菠萝包、特色菊花炸鱼球</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥140-160</div>
@@ -2853,7 +3269,7 @@
     
       <article class="day-card" id="national_day-d5">
         <div class="day-header">
-          <span class="day-title">Day 5 (10.5 黄金周收官 · 森林收心)</span>
+          <span class="day-title"><span class="sparkle">✨</span> Day 5 (10.5 黄金周收官 · 森林收心)</span>
           <span class="crowd-pill">热度指数：★☆☆☆☆ (原生态清幽大山，毫无拥挤)</span>
         </div>
 
@@ -2865,7 +3281,7 @@
         <!-- Weather Box -->
         <div class="weather-box">
           <span>⛅ 阴天微凉 22℃~28℃ | 紫外线: 弱 | 最佳日落 18:06</span>
-          <span><strong>适宜：</strong>户外/运动</span>
+          <span><strong>适宜：</strong>户外/慢调</span>
         </div>
 
         <!-- Gear Mini Bar -->
@@ -2894,7 +3310,7 @@
               <span>🌟 主选 A</span>
             </button>
             <button class="plan-toggle-btn btn-plan-b" id="btn-b-national_day-d5" onclick="switchTriplePlan('national_day-d5', 'b')">
-              <span>🔄 平替 B</span>
+              <span>🌿 平替 B</span>
             </button>
             <button class="plan-toggle-btn btn-plan-c" id="btn-c-national_day-d5" onclick="switchTriplePlan('national_day-d5', 'c')">
               <span>🍃 备选 C</span>
@@ -2922,8 +3338,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.215432,22.923412,银瓶山谢岗景区&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -2933,7 +3352,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【谢岗银瓶山生态下山大草坪（羽毛球胜地）】</span>
-                    <a href="https://uri.amap.com/search?keyword=银瓶山森林公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=银瓶山森林公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">景区正门外有数千平米平整的草坪广场，四周群山环绕，下山后打上半小时羽毛球出身透汗极度爽快！</div>
                 </div>
@@ -2941,7 +3360,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【崖山森林公园水库观景道】</span>
-                    <a href="https://uri.amap.com/search?keyword=崖山森林公园" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=崖山森林公园" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">离谢岗8分钟车程，宁静的冷门小水库，青山倒映在如镜水面，带月亮椅喝杯茶极舒服。</div>
                 </div>
@@ -2957,7 +3376,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【银瓶山山脚谢岗生态农夫饭庄】</span>
-                    <a href="https://uri.amap.com/search?keyword=银瓶山谢岗农家乐" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=银瓶山谢岗农家乐" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 清冽山泉水慢火煲农家走地鸡汤（鲜美甘润回甘毫无油腻）、紫苏大火爆炒野生山坑螺</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥140-160</div>
@@ -2966,7 +3385,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【谢岗老街传统石磨碌鹅坊】</span>
-                    <a href="https://uri.amap.com/search?keyword=谢岗特色美食" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=谢岗特色美食" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 柴火秘制碌鹅配鲜蒸粉肠、农家清炒山渡笋、山水石磨嫩豆腐</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥100-120</div>
@@ -2981,11 +3400,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #34d399;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #10b981;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #34d399;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">盐田三洲田公路自驾慢游 + 茶溪谷水库晚霞</h4>
@@ -2997,8 +3416,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.289123,22.628412,三洲田水库&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -3008,7 +3430,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【红花沥水库观景悬空步道】</span>
-                    <a href="https://uri.amap.com/search?keyword=红花沥水库" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=红花沥水库" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">盘山公路中途隐藏的静谧水库，湖水碧蓝如九寨，沿途有木栈道可坐着吹风。</div>
                 </div>
@@ -3024,7 +3446,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【盐田食街金牌红烧乳鸽王】</span>
-                    <a href="https://uri.amap.com/search?keyword=盐田红烧乳鸽" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=盐田红烧乳鸽" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 金牌红烧脆皮乳鸽（肉汁四溢）、石磨鲜虾红肠粉、海皇豆腐煲</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥130-150</div>
@@ -3039,11 +3461,11 @@
             <div class="photo-grid">
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80" alt="景致实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">📷 秘境风光</span>
+                <span class="photo-badge" style="background: #a78bfa;">📷 秘境风光</span>
               </div>
               <div class="photo-card">
                 <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="美食实拍" loading="lazy">
-                <span class="photo-badge" style="background: #8b5cf6;">🍲 地道风味</span>
+                <span class="photo-badge" style="background: #a78bfa;">🍲 地道风味</span>
               </div>
             </div>
             <h4 class="spot-name">惠州罗浮山后山酥醪村古道</h4>
@@ -3055,8 +3477,11 @@
 
             <a href="https://uri.amap.com/navigation?to=114.052130,23.312040,酥醪村&mode=car" target="_blank" class="amap-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
-              高德一键导航主目的地
+              高德一键导航主目的地 🚀
             </a>
+
+            <!-- Detailed Schedule Timeline -->
+            
 
             <!-- Nearby Play Cluster -->
             
@@ -3066,7 +3491,7 @@
                 <div class="cluster-item">
                   <div class="cluster-item-head">
                     <span class="cluster-item-name">【酥醪古观与山泉洗心池】</span>
-                    <a href="https://uri.amap.com/search?keyword=酥醪观" target="_blank" class="cluster-item-amap">高德导航</a>
+                    <a href="https://uri.amap.com/search?keyword=酥醪观" target="_blank" class="cluster-item-amap">高德导航 ✨</a>
                   </div>
                   <div class="cluster-item-desc">千年古观依山就势，清泉自岩缝流出甘甜清冽，深山古刹听钟鸣。</div>
                 </div>
@@ -3082,7 +3507,7 @@
                 <div class="food-item-card">
                   <div class="food-item-head">
                     <span class="food-item-name">【酥醪村老村民家宴土猪肉汤】</span>
-                    <a href="https://uri.amap.com/search?keyword=酥醪村农家菜" target="_blank" class="food-item-amap">导航去吃</a>
+                    <a href="https://uri.amap.com/search?keyword=酥醪村农家菜" target="_blank" class="food-item-amap">导航去吃 🍲</a>
                   </div>
                   <div class="food-item-spec">🥢 深山泉水炖土猪肉汤（只放少许白胡椒，肉香汤清极度甘润）、山水仙人豆腐脑</div>
                   <div class="food-item-price">💰 消费预算：双人约 ¥90-110</div>
@@ -3105,7 +3530,7 @@
     <section class="checklist-section">
       <h3>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="#f97316"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-        情侣自驾 · 极细致出行准备与后备箱清单 (支持实时勾选保存)
+        情侣自驾 · 极细致出行准备与后备箱清单 (支持实时勾选保存) ✨
       </h3>
 
       <div class="check-category">
@@ -3338,8 +3763,8 @@
     <!-- Toolbox Section -->
     <section class="toolbox">
       <h3>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="#f97316"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
-        自驾避堵与安全应急雷达
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fb923c"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+        自驾避堵与安全应急雷达 🌟
       </h3>
       <div class="toolbox-item">
         <div class="lbl">⚡ 深圳外地车限行政策</div>
@@ -3364,7 +3789,7 @@
   <div class="share-bar">
     <button class="share-btn" onclick="copyShareLink()">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
-      <span>一键复制微信链接 / 发给女朋友</span>
+      <span>✨ 一键复制微信链接 / 发给女朋友 🌟</span>
     </button>
   </div>
 
@@ -3450,13 +3875,13 @@
       try {
         const checkboxes = document.querySelectorAll('.check-item input[type="checkbox"]');
         const states = Array.from(checkboxes).map(c => c.checked);
-        localStorage.setItem('roadbook_checklist_v4', JSON.stringify(states));
+        localStorage.setItem('roadbook_checklist_starry_v5', JSON.stringify(states));
       } catch (e) {}
     }
 
     window.addEventListener('DOMContentLoaded', () => {
       try {
-        const saved = JSON.parse(localStorage.getItem('roadbook_checklist_v4'));
+        const saved = JSON.parse(localStorage.getItem('roadbook_checklist_starry_v5'));
         if (saved) {
           const checkboxes = document.querySelectorAll('.check-item input[type="checkbox"]');
           checkboxes.forEach((c, idx) => {
